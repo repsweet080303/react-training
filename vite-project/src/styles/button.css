@@ -1,0 +1,13 @@
+.btn__add {
+  background-color: red;
+  padding: 20px;
+  font-size: 23px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 9px;
+}
+
+.btn__add:hover {
+  background-color: brown;
+}
