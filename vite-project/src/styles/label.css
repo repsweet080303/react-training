@@ -1,0 +1,9 @@
+.label {
+  width: 70px;
+  background-color: bisque;
+  color: #737373;
+  padding: 4px 14px;
+  font-size: 30px;
+  margin: 4px auto;
+  border-radius: 4px;
+}
