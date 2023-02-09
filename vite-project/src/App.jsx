@@ -1,11 +1,5 @@
-import { useState } from 'react';
-import Button from './components/button';
-import Toggle from './components/Toggle';
-import Label from './components/Label';
-import Input from './components/input';
+import Greeting from './conditional-render/Greeting';
 import Welcome from './components/Welcome';
-import Comment from './components/Comment';
-import comment from './abstract/utils';
 import './App.css';
 
 function App() {
@@ -13,16 +7,7 @@ function App() {
   return (
     <div className='App'>
       <Welcome name='Px Viet' />
-      <Comment
-        author={comment.author}
-        date={comment.date}
-        text={comment.text}
-      />
-      {header}
-      <Label></Label>
-      <Input />
-      <Toggle/>
-      <Button></Button>
+      <Greeting isLogin={true} />
     </div>
   );
 }
