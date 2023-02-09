@@ -1,6 +1,17 @@
 import '../styles/button.css';
+
 function Button() {
-  return <button className='btn__add'>Add user</button>;
+  function handleEvent(event) {
+    event.preventDefault();
+
+    console.log('Event handled');
+  }
+
+  return (
+    <button className='btn__add' onClick={handleEvent}>
+      Add user
+    </button>
+  );
 }
 
 export default Button;

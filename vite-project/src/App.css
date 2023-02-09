@@ -10,3 +10,13 @@
   font-size: 40px;
 }
 
+.toggle {
+  background-color: #fff;
+  padding: 20px;
+  font-size: 23px;
+  font-weight: 700;
+  color: red;
+  border: none;
+  border-radius: 9px;
+  margin-right: 6px;
+}

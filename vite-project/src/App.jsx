@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Button from './components/button';
+import Toggle from './components/Toggle';
 import Label from './components/Label';
 import Input from './components/input';
 import Welcome from './components/Welcome';
@@ -20,6 +21,7 @@ function App() {
       {header}
       <Label></Label>
       <Input />
+      <Toggle/>
       <Button></Button>
     </div>
   );
