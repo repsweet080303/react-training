@@ -3,7 +3,7 @@ import React from 'react';
 class Watch extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { date: new Date() };
+    this.state = { date: new Date()};
   }
 
   componentDidMount() {
