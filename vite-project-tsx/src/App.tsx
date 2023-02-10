@@ -5,6 +5,7 @@ import Page from './conditionalRender/Page';
 import ListNumber from './listAndKey/ListNumber';
 import NameForm from './form/NameForm';
 import Reservation from './form/Reservation';
+import Caculator from './LiftingStateUp/Calculator';
 function App() {
   return (
     <div className='App'>
@@ -13,7 +14,8 @@ function App() {
       <Page />
       <ListNumber number={[2, 2, 7, 3, 7]} />
       <NameForm />
-      <Reservation/>
+      <Reservation />
+      <Caculator/>
     </div>
   );
 }
