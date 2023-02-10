@@ -16,8 +16,7 @@ class NameForm extends React.Component<{}, State> {
     this.handleChange = this.handleChange.bind(this);
   }
 
-  handleChange(event: React.ChangeEvent<HTMLTextAreaElement>) {
-    console.log(this.state.value);
+  handleChange(event: React.ChangeEvent<HTMLSelectElement>) {
     this.setState({ value: event.target.value });
   }
 
@@ -31,12 +30,13 @@ class NameForm extends React.Component<{}, State> {
     return (
       <form className='form' onSubmit={this.handleSubmit}>
         <label>
-          Essay:
-          <textarea
-            className='form-label'
-            value={this.state.value}
-            onChange={this.handleChange}
-          />
+          Pick your favorite flavor:
+          <select value={this.state.value} onChange={this.handleChange}>
+            <option value='grapefruit'>Grapefruit</option>
+            <option value='lime'>Lime</option>
+            <option value='coconut'>Coconut</option>
+            <option value='mango'>Mango</option>
+          </select>
         </label>
         <input className='form-submit' type='submit' value='Submit' />
       </form>
