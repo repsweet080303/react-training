@@ -11,13 +11,12 @@ interface Props {
 class NameForm extends React.Component<{}, State> {
   constructor(props: Props) {
     super(props);
-    this.state = { value: '' };
+    this.state = { value: 'enter your comment' };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
   }
 
-  
-  handleChange(event: React.ChangeEvent<HTMLInputElement>) {
+  handleChange(event: React.ChangeEvent<HTMLTextAreaElement>) {
     console.log(this.state.value);
     this.setState({ value: event.target.value });
   }
@@ -31,13 +30,12 @@ class NameForm extends React.Component<{}, State> {
   render(): React.ReactNode {
     return (
       <form className='form' onSubmit={this.handleSubmit}>
-        <label className='form-label'>
-          Name
-          <input
-            className='form-input'
-            type='text'
-            onChange={this.handleChange}
+        <label>
+          Essay:
+          <textarea
+            className='form-label'
             value={this.state.value}
+            onChange={this.handleChange}
           />
         </label>
         <input className='form-submit' type='submit' value='Submit' />
