@@ -6,6 +6,7 @@ import ListNumber from './listAndKey/ListNumber';
 import NameForm from './form/NameForm';
 import Reservation from './form/Reservation';
 import Caculator from './LiftingStateUp/Calculator';
+import TemperatureInput from './LiftingStateUp/TemperatureInput';
 function App() {
   return (
     <div className='App'>
@@ -16,6 +17,8 @@ function App() {
       <NameForm />
       <Reservation />
       <Caculator/>
+      <TemperatureInput scale='c'/>
+      <TemperatureInput scale='f'/>
     </div>
   );
 }
