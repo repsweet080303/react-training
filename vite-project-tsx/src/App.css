@@ -4,3 +4,19 @@
   padding: 2rem;
   text-align: center;
 }
+
+ul {
+  padding: 0;
+}
+
+.list-item {
+  list-style: none;
+}
+
+.form-input {
+  margin: 8px auto;
+}
+
+.form-input {
+  margin: 0 4px;
+}

@@ -1,4 +1,4 @@
-import { v4 as uuidv4 } from 'uuid';
+// import { v4 as uuidv4 } from 'uuid';
 
 interface Props {
   number: number[];
@@ -9,8 +9,10 @@ function ListNumber(props: Props) {
 
   return (
     <ul>
-      {number.map((number) => (
-        <li key={uuidv4()}>{number}</li>
+      {number.map((number, i) => (
+        <li key={i} className='list-item'>
+          {number}
+        </li>
       ))}
     </ul>
   );
