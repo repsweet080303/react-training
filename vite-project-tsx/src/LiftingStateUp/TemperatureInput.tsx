@@ -10,7 +10,9 @@ interface State {
 }
 
 interface Props {
-  scale: string;
+  scale: 'c' | 'f';
+  temperature: string;
+  onTemperatureChange: (temperature: string) => void;
 }
 
 class TemperatureInput extends React.Component<Props, State> {
@@ -21,11 +23,12 @@ class TemperatureInput extends React.Component<Props, State> {
   }
 
   handleChange(event: React.ChangeEvent<HTMLInputElement>) {
-    this.setState({ temperature: event.target.value });
+    // this.setState({ temperature: event.target.value });
+    this.props.onTemperatureChange(event.target.value)
   }
 
   render(): React.ReactNode {
-    const temperature = this.state.temperature;
+    const temperature = this.props.temperature;
     const scale = this.props.scale;
     return (
       <fieldset>
