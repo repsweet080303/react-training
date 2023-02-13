@@ -6,6 +6,7 @@ import ListNumber from './listAndKey/ListNumber';
 import NameForm from './form/NameForm';
 import Reservation from './form/Reservation';
 import Caculator from './LiftingStateUp/Calculator';
+import WelcomeDialog from './composition/WelcomeDialog';
 function App() {
   return (
     <div className='App'>
@@ -16,6 +17,7 @@ function App() {
       <NameForm />
       <Reservation />
       <Caculator/>
+      <WelcomeDialog/>
     </div>
   );
 }
