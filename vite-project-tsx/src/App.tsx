@@ -8,6 +8,8 @@ import Reservation from './form/Reservation';
 import Caculator from './LiftingStateUp/Calculator';
 import WelcomeDialog from './composition/WelcomeDialog';
 import SignUpDialog from './composition/SignUpDialog';
+import FilterableProductTable from './thinkingReact/FilterableProductTable';
+import PRODUCTS from './thinkingReact/data';
 function App() {
   return (
     <div className='App'>
@@ -17,9 +19,10 @@ function App() {
       <ListNumber number={[2, 2, 7, 3, 7]} />
       <NameForm />
       <Reservation />
-      <Caculator/>
-      <WelcomeDialog/>
-      <SignUpDialog/>
+      <Caculator />
+      <WelcomeDialog />
+      <SignUpDialog />
+      <FilterableProductTable product={PRODUCTS} />
     </div>
   );
 }

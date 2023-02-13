@@ -21,3 +21,7 @@ ul {
 .form-label {
   margin: 0 4px;
 }
+
+table {
+  margin: 0 auto;
+}
