@@ -7,6 +7,7 @@ import NameForm from './form/NameForm';
 import Reservation from './form/Reservation';
 import Caculator from './LiftingStateUp/Calculator';
 import WelcomeDialog from './composition/WelcomeDialog';
+import SignUpDialog from './composition/SignUpDialog';
 function App() {
   return (
     <div className='App'>
@@ -18,6 +19,7 @@ function App() {
       <Reservation />
       <Caculator/>
       <WelcomeDialog/>
+      <SignUpDialog/>
     </div>
   );
 }
