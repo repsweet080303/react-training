@@ -11,15 +11,25 @@ interface Product {
 
 interface Props {
   product: Product[];
+  filterText: string;
+  inStockOnly: boolean;
 }
 
 class ProductTable extends React.Component<Props> {
   render(): React.ReactNode {
+    const filterText = this.props.filterText;
+    const inStockOnly = this.props.inStockOnly;
     const product = this.props.product;
     const row: JSX.Element[] = [];
     let lastestCategory = '';
 
-    this.props.product.forEach((product) => {
+    product.forEach((product) => {
+      if (product.name.indexOf(filterText) === -1) {
+        return;
+      }
+      if (inStockOnly && !product.stocked) {
+        return;
+      }
       if (product.category !== lastestCategory) {
         row.push(
           <ProductCategoryRow
@@ -29,7 +39,6 @@ class ProductTable extends React.Component<Props> {
         );
       }
       row.push(<ProductRow product={product} key={product.name} />);
-      console.log(row);
 
       lastestCategory = product.category;
     });

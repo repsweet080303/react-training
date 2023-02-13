@@ -13,12 +13,28 @@ interface Props {
   product: Product[];
 }
 
-class FilterableProductTable extends React.Component<Props> {
+interface State {
+  filterText: string;
+  inStockOnly: boolean;
+}
+
+class FilterableProductTable extends React.Component<Props, State> {
+  constructor(props: Props) {
+    super(props);
+    this.state = { filterText: 'k', inStockOnly: true };
+  }
   render(): React.ReactNode {
     return (
       <>
-        <SearchBar />
-        <ProductTable product={this.props.product} />
+        <SearchBar
+          filterText={this.state.filterText}
+          inStockOnly={this.state.inStockOnly}
+        />
+        <ProductTable
+          product={this.props.product}
+          filterText={this.state.filterText}
+          inStockOnly={this.state.inStockOnly}
+        />
       </>
     );
   }
