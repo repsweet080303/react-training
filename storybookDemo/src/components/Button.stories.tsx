@@ -36,3 +36,10 @@ Large.args = {
   label: 'Big',
   size: 'large',
 };
+
+export const Small = Template.bind({});
+
+Small.args = {
+  ...Large.args,
+  size: 'small',
+}
