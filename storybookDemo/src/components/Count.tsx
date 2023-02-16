@@ -6,7 +6,7 @@ function Count() {
 
   useEffect(() => {
     document.title = `you are clicked ${count} times`;
-  });
+  },[]);
   return (
     <>
       <h3>you were clicked {count} !</h3>
