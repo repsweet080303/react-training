@@ -1,6 +1,7 @@
 import React from 'react';
 import Form from './components/Form';
 import ThemeContext from './components/ThemeContext';
+import StopWatch from './components/StopWatch';
 
 import './App.css';
 
@@ -13,6 +14,7 @@ function App() {
 
         <Form />
       </ThemeContext.Provider>
+      <StopWatch />
     </div>
   );
 }
