@@ -1,4 +1,3 @@
-import React from 'react';
 import { useState, useEffect } from 'react';
 
 interface FriendStatusProps {
@@ -27,12 +26,10 @@ function useFriendStatus(friendID: string, ChatAPI: ChatAPI) {
   function handleStatusChange(status: FriendStatus) {
     setIsOnline(status.isOnline);
   }
-  useEffect(() => {
+  useEffect((() => {
     ChatAPI.subscribeToFriendStatus(friendID, handleStatusChange);
-    return () =>
-      ChatAPI.unsubscribeToFriendStatus(friendID, handleStatusChange);
-  }),
-    [friendID, ChatAPI];
+    return () => ChatAPI.unsubscribeToFriendStatus(friendID, handleStatusChange);
+  }), [friendID, ChatAPI]);
 
   return isOnline;
 }

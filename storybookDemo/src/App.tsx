@@ -1,16 +1,20 @@
-import { useState } from 'react'
-import Count from './components/Count'
-import './App.css'
+import React from 'react';
+import Form from './components/Form';
+import ThemeContext from './components/ThemeContext';
+
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className="App">
-      <h1>Vite + React</h1>
-      <Count/>
+      {/* <h1>Vite + React</h1>
+      <Count /> */}
+      <ThemeContext.Provider value="dark">
+
+        <Form />
+      </ThemeContext.Provider>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
