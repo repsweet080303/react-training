@@ -1,19 +1,26 @@
-import React from 'react';
-import Form from './components/Form';
-import ThemeContext from './components/ThemeContext';
-import StopWatch from './components/StopWatch';
-import StopRunTime from './components/StopRunTime';
+import React, { useState } from 'react';
+import ProductPage from './components/ProductPage';
 
 import './App.css';
 
 function App() {
+  const [isDark, setIsDark] = useState(false);
   return (
     <div className="App">
-      <ThemeContext.Provider value="dark">
-        <Form />
-      </ThemeContext.Provider>
-      <StopWatch />
-      <StopRunTime />
+      <p>
+        <input
+          type="checkbox"
+          checked={isDark}
+          onChange={(e) => setIsDark(e.target.checked)}
+        />
+        Dark mode
+      </p>
+      <hr />
+      <ProductPage
+        referrer="wizard_of_oz"
+        productId={123}
+        theme={isDark ? 'dark' : 'light'}
+      />
     </div>
   );
 }
