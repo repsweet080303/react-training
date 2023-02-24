@@ -1,0 +1,78 @@
+.btn {
+  color: $text-light-color;
+  border-radius: $btn-border-radius-sm;
+  margin: 3px;
+  font-size: $font-size-xsm;
+
+  &__primary {
+    border: none;
+    background-color: $color-primary;
+  }
+
+  &__secondary {
+    @extend .btn__primary;
+  }
+
+  &__tertiary {
+    color: $color-primary;
+    background-color: transparent;
+    border: none;
+
+    &:hover {
+      color: $color-light;
+      background-color: $color-primary;
+      opacity: 0.8;
+    }
+  }
+
+  &__quaternary {
+    color: $color-primary;
+    background-color: $color-light;
+    border: 1px solid $color-primary;
+  }
+
+  &__quinary {
+    @extend .btn__quaternary;
+    border-radius: 37px;
+  }
+
+  &--xs {
+    padding: 10px 4px;
+
+    @include desktop {
+      padding: 15px 5px;
+    }
+  }
+
+  &--sm {
+    padding: 8px 15px;
+
+    @include desktop {
+      padding: 10px 20px;
+    }
+  }
+
+  &--md {
+    padding: 8px 18px;
+
+    @include tablet {
+      padding: 10px 22px;
+    }
+
+    @include desktop {
+      padding: 15px 25px;
+    }
+  }
+
+  &--lg {
+    padding: 10px 30px;
+
+    @include tablet {
+      padding: 12px 35px;
+    }
+
+    @include desktop {
+      padding: 15px 40px;
+    }
+  }
+}
