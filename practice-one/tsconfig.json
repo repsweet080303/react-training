@@ -17,7 +17,8 @@
     "jsx": "react-jsx",
     "baseUrl": "./src",
     "paths": {
-      "@components/*": ["components/*"],
+      "@/*": ["./*"]
+    }
   },
   "include": [".eslintrc.js","src"],
   "references": [{ "path": "./tsconfig.node.json" }]
