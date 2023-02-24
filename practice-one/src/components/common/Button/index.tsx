@@ -1,11 +1,5 @@
 import React, { ReactNode } from 'react';
 
-declare global {
-  interface ReactNode {
-    readonly id: number;
-  }
-}
-
 interface Props {
   variant: 'primary' | 'secondary' | 'tertiary' | 'quaternary' | 'quinary';
   size: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
