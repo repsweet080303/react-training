@@ -1,0 +1,20 @@
+// font family bold
+@font-face {
+  font-family: 'Montserrat-bold';
+  src: url(../../assets/fonts/Montserrat-Bold.ttf) format('truetype');
+}
+
+// font family base
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../../assets/fonts/Montserrat-VariableFont_wght.ttf)
+    format('truetype');
+}
+
+/* variable font-family */
+$font-family-primary: 'Montserrat-bold';
+$font-family-secondary: 'Montserrat';
+
+body {
+  font-family: $font-family-primary;
+}
