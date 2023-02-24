@@ -33,7 +33,7 @@ function Button(props: Props) {
     <Component
       type={type}
       href={href}
-      className={`btn btn-${variant} btn-${size}`}
+      className={`btn btn__${variant} btn--${size}`}
       onClick={(e) => onClick?.(e)}
     >
       {children || title}
