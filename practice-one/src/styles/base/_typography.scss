@@ -1,19 +1,19 @@
 // font family bold
 @font-face {
   font-family: 'Montserrat-bold';
-  src: url(../../assets/fonts/Montserrat-SemiBold.ttf);
+  src: url(../assets/fonts/Montserrat-SemiBold.ttf) format('truetype');
 }
 
 // font family base
 @font-face {
   font-family: 'Montserrat';
-  src: url(../../assets/fonts/Montserrat-Medium.ttf);
+  src: url(../assets/fonts/Montserrat-Medium.ttf) format('truetype');
 }
 
 /* variable font-family */
 $font-family-primary: 'Montserrat-bold';
 $font-family-secondary: 'Montserrat';
 
-.btn {
-  font-family: 'Montserrat-bold', sans-serif;
+* {
+  font-family: $font-family-primary;
 }

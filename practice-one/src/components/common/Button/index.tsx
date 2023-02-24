@@ -7,8 +7,8 @@ declare global {
 }
 
 interface Props {
-  variant: 'primary' | 'secondary' | 'tertiary' | 'quaternary';
-  size: 'sm' | 'md' | 'lg' | 'xl' | 'xxl';
+  variant: 'primary' | 'secondary' | 'tertiary' | 'quaternary' | 'quinary';
+  size: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
   type?: 'button' | 'submit';
   children?: ReactNode;
   title?: string;
