@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react';
+import '../../../styles/main.scss';
 
-interface Props {
+export interface Props {
   variant: 'primary' | 'secondary' | 'tertiary' | 'quaternary' | 'quinary';
   size: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
   type?: 'button' | 'submit';

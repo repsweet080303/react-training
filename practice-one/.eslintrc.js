@@ -20,5 +20,7 @@ module.exports = {
   plugins: ['react', '@typescript-eslint'],
   rules: {
     'import/extensions': 'off',
+    'react/function-component-definition': 'off',
+    'import/no-extraneous-dependencies': 'off',
   },
 };
