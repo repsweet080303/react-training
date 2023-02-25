@@ -1,0 +1,22 @@
+.list-item {
+  &__link {
+    color: $paragraph-color;
+    margin: 0;
+    font: {
+      family: $font-family-tertiary;
+      size: $font-size-xsm;
+    }
+
+    &:hover {
+      color: $color-primary;
+    }
+
+    @include tablet {
+      margin-left: 35px;
+    }
+
+    @include desktop {
+      margin: 0 21px 0 0;
+    }
+  }
+}

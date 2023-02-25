@@ -7,7 +7,7 @@ export default {
   component: Button,
 } as ComponentMeta<typeof Button>;
 
-const Template: ComponentStory<typeof Button> = function ({
+const Template: ComponentStory<typeof Button> = function button({
   variant,
   size,
   type,

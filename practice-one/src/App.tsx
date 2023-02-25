@@ -1,10 +1,13 @@
 import React from 'react';
-import Brand from '@/components/common/Brand';
+import ListItem from '@/components/common/ListItem/ListItem';
 
 function App() {
   return (
     <div className="App">
-      <Brand href="#" title="Brandname" />
+      <ListItem tagName="a" href="#" title="Home" />
+      <ListItem tagName="a" href="#" title="Product" />
+      <ListItem tagName="a" href="#" title="Pricing" />
+      <ListItem tagName="a" href="#" title="Contact" />
     </div>
   );
 }
