@@ -1,5 +1,5 @@
 import React from 'react';
-import ListItem from '@/components/common/ListItem/ListItem';
+import ListItem from '@/components/common/ListItem';
 
 function App() {
   return (
