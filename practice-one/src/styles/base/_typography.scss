@@ -1,6 +1,12 @@
 // font family bold
 @font-face {
   font-family: 'Montserrat-bold';
+  src: url(../assets/fonts/Montserrat-Bold.ttf) format('truetype');
+}
+
+// font family Semibold
+@font-face {
+  font-family: 'Montserrat-semibold';
   src: url(../assets/fonts/Montserrat-SemiBold.ttf) format('truetype');
 }
 
@@ -11,7 +17,8 @@
 }
 
 /* variable font-family */
-$font-family-primary: 'Montserrat-bold';
+$font-family-primary: 'Montserrat-semibold';
+$font-family-tertiary: 'Montserrat-bold';
 $font-family-secondary: 'Montserrat';
 
 * {

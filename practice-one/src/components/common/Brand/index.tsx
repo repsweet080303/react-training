@@ -9,7 +9,7 @@ function Brand(props: IProps) {
   const { href = '#', title } = props;
   return (
     <h1 className="brand">
-      <a href={href}>{title}</a>
+      <a className="brand__link" href={href}>{title}</a>
     </h1>
   );
 }
