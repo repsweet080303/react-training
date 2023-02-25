@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import '../../../styles/main.scss';
 
-export interface Props {
+export interface IProps {
   variant: 'primary' | 'secondary' | 'tertiary' | 'quaternary' | 'quinary';
   size: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
   type?: 'button' | 'submit';
@@ -12,7 +12,7 @@ export interface Props {
   onClick?: (event: React.MouseEvent) => void;
 }
 
-function Button(props: Props) {
+function Button(props: IProps) {
   const {
     variant = 'primary',
     size = 'md',

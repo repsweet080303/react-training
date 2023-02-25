@@ -1,29 +1,31 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import Button, { Props } from './index';
+import Button, { IProps } from './index';
 
 export default {
   title: 'PracticeOne/Common/Button',
   component: Button,
 } as ComponentMeta<typeof Button>;
 
-const Template: ComponentStory<typeof Button> = ({
+const Template: ComponentStory<typeof Button> = function ({
   variant,
   size,
   type,
   href,
   title,
   tag,
-}: Props) => (
-  <Button
-    type={type}
-    variant={variant}
-    size={size}
-    href={href}
-    title={title}
-    tag={tag}
-  />
-);
+}: IProps) {
+  return (
+    <Button
+      type={type}
+      variant={variant}
+      size={size}
+      href={href}
+      title={title}
+      tag={tag}
+    />
+  );
+};
 
 export const Primary = Template.bind({});
 Primary.args = {

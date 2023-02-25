@@ -1,0 +1,9 @@
+.brand {
+  cursor: pointer;
+  font-size: $font-size-lg;
+  font-family: $font-family-tertiary;
+
+  &__link {
+    color: $text-primary-color;
+  }
+}
