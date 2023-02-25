@@ -7,7 +7,7 @@ export default {
   component: Brand,
 } as ComponentMeta<typeof Brand>;
 
-const Template: ComponentStory<typeof Brand> = function ({
+const Template: ComponentStory<typeof Brand> = function brand({
   href,
   title,
 }: IProps) {
