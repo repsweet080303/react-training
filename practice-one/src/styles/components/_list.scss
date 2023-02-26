@@ -1,5 +1,8 @@
 .list {
-  display: flex;
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+  }
   &--column {
     flex-direction: column;
   }
