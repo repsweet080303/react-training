@@ -1,13 +1,17 @@
 import React from 'react';
-import ListItem from '@/components/common/ListItem';
+import List from './components/common/List';
+import { IProps } from './components/common/ListItem';
 
 function App() {
+  const listNavigation: IProps[] = [
+    { tagName: 'a', title: 'Home', href: '#home' },
+    { tagName: 'a', title: 'Product', href: '#product' },
+    { tagName: 'a', title: 'Pricing', href: '#pricing' },
+    { tagName: 'a', title: 'Contact', href: '#contact' },
+  ];
   return (
     <div className="App">
-      <ListItem tagName="a" href="#" title="Home" />
-      <ListItem tagName="a" href="#" title="Product" />
-      <ListItem tagName="a" href="#" title="Pricing" />
-      <ListItem tagName="a" href="#" title="Contact" />
+      <List listItem={listNavigation} className="list--row" />
     </div>
   );
 }

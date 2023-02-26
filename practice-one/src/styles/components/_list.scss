@@ -1,0 +1,6 @@
+.list {
+  display: flex;
+  &--column {
+    flex-direction: column;
+  }
+}

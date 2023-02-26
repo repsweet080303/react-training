@@ -7,7 +7,9 @@ export interface IProps {
 }
 
 function ListItem(props: IProps) {
-  const { tagName: TagName, href, title } = props;
+  const {
+    tagName: TagName, href, title,
+  } = props;
   return (
     <li className="list-item">
       <TagName className="list-item__link" href={href}>
