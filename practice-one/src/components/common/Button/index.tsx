@@ -1,40 +1,25 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
 import '../../../styles/main.scss';
+import { IButtonProps } from '@/types/interfaces';
 
-export interface IProps {
-  variant: 'primary' | 'secondary' | 'tertiary' | 'quaternary' | 'quinary';
-  size: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
-  type?: 'button' | 'submit';
-  children?: ReactNode;
-  title?: string;
-  href?: string;
-  tag?: 'button' | 'a';
-  onClick?: (event: React.MouseEvent) => void;
-}
-
-function Button(props: IProps) {
-  const {
-    variant = 'primary',
-    size = 'md',
-    type,
-    children,
-    href,
-    title,
-    tag: Component = 'button',
-    onClick,
-  } = props;
-
-  return (
-    <Component
-      type={type}
-      href={href}
-      className={`btn btn__${variant} btn--${size}`}
-      onClick={(e) => onClick?.(e)}
-    >
-      {children || title}
-    </Component>
-  );
-}
+const Button = ({
+  variant = 'primary',
+  size = 'md',
+  type,
+  children,
+  href,
+  tag: Component = 'button',
+  onClick,
+}: IButtonProps) => (
+  <Component
+    type={type}
+    href={href}
+    className={`btn btn__${variant} btn--${size}`}
+    onClick={(e) => onClick?.(e)}
+  >
+    {children}
+  </Component>
+);
 
 Button.defaultProps = {
   type: 'button',

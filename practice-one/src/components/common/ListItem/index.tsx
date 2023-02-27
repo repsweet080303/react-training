@@ -1,22 +1,12 @@
 import React from 'react';
+import { IListItemProps } from '@/types/interfaces';
 
-export interface IProps {
-  tagName: 'p' | 'a';
-  href?: string;
-  title: string;
-}
-
-function ListItem(props: IProps) {
-  const {
-    tagName: TagName, href, title,
-  } = props;
-  return (
-    <li className="list-item">
-      <TagName className="list-item__link" href={href}>
-        {title}
-      </TagName>
-    </li>
-  );
-}
+const ListItem = ({ tagName: TagName, href, title }: IListItemProps) => (
+  <li className="list-item">
+    <TagName className="list-item__link" href={href}>
+      {title}
+    </TagName>
+  </li>
+);
 
 export default ListItem;

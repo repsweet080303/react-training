@@ -1,18 +1,17 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import Brand, { IProps } from './index';
+import Brand from '@/components/common/Brand';
+import { IBrandProps } from '@/types/interfaces';
 
 export default {
   title: 'PracticeOne/Common/Brand',
   component: Brand,
 } as ComponentMeta<typeof Brand>;
 
-const Template: ComponentStory<typeof Brand> = function brand({
+const Template: ComponentStory<typeof Brand> = ({
   href,
   title,
-}: IProps) {
-  return <Brand href={href} title={title} />;
-};
+}: IBrandProps) => <Brand href={href} title={title} />;
 
 export const Primary = Template.bind({});
 
