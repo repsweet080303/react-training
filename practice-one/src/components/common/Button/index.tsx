@@ -5,20 +5,16 @@ import { IButtonProps } from '@/types/interfaces';
 const Button = ({
   variant = 'primary',
   size = 'md',
-  type,
   children,
-  href,
-  tag: Component = 'button',
   onClick,
 }: IButtonProps) => (
-  <Component
-    type={type}
-    href={href}
+  <button
+    type="button"
     className={`btn btn__${variant} btn--${size}`}
     onClick={(e) => onClick?.(e)}
   >
     {children}
-  </Component>
+  </button>
 );
 
 Button.defaultProps = {

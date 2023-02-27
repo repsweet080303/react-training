@@ -1,7 +1,18 @@
 import React, { ReactNode } from 'react';
+import { FontAwesomeIconProps } from '@fortawesome/react-fontawesome';
+import { IconDefinition } from '@fortawesome/fontawesome-common-types';
 import {
-  TypeVariant, TypeSize, TypeButton, TypeTag, TypeItemTag, TypeList,
+  TypeVariant,
+  TypeSize,
+  TypeButton,
+  TypeItemTag,
+  TypeList,
 } from '@/types';
+
+export interface IconProps extends Omit<FontAwesomeIconProps, 'icon'> {
+  icon: IconDefinition;
+  additionalClass: string;
+}
 
 export interface IBrandProps {
   href?: string;
@@ -11,10 +22,8 @@ export interface IBrandProps {
 export interface IButtonProps {
   variant: TypeVariant;
   size: TypeSize;
-  type?: TypeButton;
+  type: TypeButton;
   children?: ReactNode;
-  href?: string;
-  tag?: TypeTag;
   onClick?: (event: React.MouseEvent) => void;
 }
 
