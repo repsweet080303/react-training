@@ -26,6 +26,6 @@ export interface IListItemProps {
 }
 
 export interface IListProps {
-  className: TypeList;
+  additionalClass: TypeList;
   listItem: IListItemProps[];
 }

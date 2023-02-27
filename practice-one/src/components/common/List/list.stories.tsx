@@ -9,7 +9,7 @@ export default {
 } as ComponentMeta<typeof List>;
 
 const Template: ComponentStory<typeof List> = function list({
-  className,
+  additionalClass,
 }: IListProps) {
   const listNavigation: IListItemProps[] = [
     { tagName: 'a', title: 'Home', href: '#home' },
@@ -18,16 +18,16 @@ const Template: ComponentStory<typeof List> = function list({
     { tagName: 'a', title: 'Contact', href: '#contact' },
   ];
   return (
-    <List className={className} listItem={listNavigation} />
+    <List additionalClass={additionalClass} listItem={listNavigation} />
   );
 };
 
 export const ListRow = Template.bind({});
 ListRow.args = {
-  className: 'list--row',
+  additionalClass: 'list--row',
 };
 
 export const ListColumn = Template.bind({});
 ListColumn.args = {
-  className: 'list--column',
+  additionalClass: 'list--column',
 };

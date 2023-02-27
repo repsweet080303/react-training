@@ -1,10 +1,7 @@
 import React from 'react';
 import { IListItemProps } from '@/types/interfaces';
 
-function ListItem(props: IListItemProps) {
-  const {
-    tagName: TagName, href, title,
-  } = props;
+function ListItem({ tagName: TagName, href, title }: IListItemProps) {
   return (
     <li className="list-item">
       <TagName className="list-item__link" href={href}>

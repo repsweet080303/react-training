@@ -2,18 +2,16 @@ import React from 'react';
 import '../../../styles/main.scss';
 import { IButtonProps } from '@/types/interfaces';
 
-function Button(props: IButtonProps) {
-  const {
-    variant = 'primary',
-    size = 'md',
-    type,
-    children,
-    href,
-    title,
-    tag: Component = 'button',
-    onClick,
-  } = props;
-
+function Button({
+  variant = 'primary',
+  size = 'md',
+  type,
+  children,
+  href,
+  title,
+  tag: Component = 'button',
+  onClick,
+}: IButtonProps) {
   return (
     <Component
       type={type}
