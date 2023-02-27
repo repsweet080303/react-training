@@ -8,25 +8,23 @@ export default {
   component: Button,
 } as ComponentMeta<typeof Button>;
 
-const Template: ComponentStory<typeof Button> = function button({
+const Template: ComponentStory<typeof Button> = ({
   variant,
   size,
   type,
   href,
   title,
   tag,
-}: IButtonProps) {
-  return (
-    <Button
-      type={type}
-      variant={variant}
-      size={size}
-      href={href}
-      title={title}
-      tag={tag}
-    />
-  );
-};
+}: IButtonProps) => (
+  <Button
+    type={type}
+    variant={variant}
+    size={size}
+    href={href}
+    title={title}
+    tag={tag}
+  />
+);
 
 export const Primary = Template.bind({});
 Primary.args = {

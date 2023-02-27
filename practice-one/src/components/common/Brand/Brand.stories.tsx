@@ -8,12 +8,10 @@ export default {
   component: Brand,
 } as ComponentMeta<typeof Brand>;
 
-const Template: ComponentStory<typeof Brand> = function brand({
+const Template: ComponentStory<typeof Brand> = ({
   href,
   title,
-}: IBrandProps) {
-  return <Brand href={href} title={title} />;
-};
+}: IBrandProps) => <Brand href={href} title={title} />;
 
 export const Primary = Template.bind({});
 

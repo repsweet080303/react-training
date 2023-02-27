@@ -1,10 +1,18 @@
 import { IListItemProps } from '@/types/interfaces';
 
 const listNavigation: IListItemProps[] = [
-  { tagName: 'a', title: 'Home', href: '#home' },
-  { tagName: 'a', title: 'Product', href: '#product' },
-  { tagName: 'a', title: 'Pricing', href: '#pricing' },
-  { tagName: 'a', title: 'Contact', href: '#contact' },
+  {
+    id: 1, tagName: 'a', title: 'Home', href: '#home',
+  },
+  {
+    id: 2, tagName: 'a', title: 'Product', href: '#product',
+  },
+  {
+    id: 3, tagName: 'a', title: 'Pricing', href: '#pricing',
+  },
+  {
+    id: 4, tagName: 'a', title: 'Contact', href: '#contact',
+  },
 ];
 
 export default listNavigation;

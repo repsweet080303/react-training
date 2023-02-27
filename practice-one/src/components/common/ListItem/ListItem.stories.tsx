@@ -8,13 +8,11 @@ export default {
   component: ListItem,
 } as ComponentMeta<typeof ListItem>;
 
-const Template: ComponentStory<typeof ListItem> = function listItem({
+const Template: ComponentStory<typeof ListItem> = ({
   href,
   tagName,
   title,
-}: IListItemProps) {
-  return <ListItem href={href} tagName={tagName} title={title} />;
-};
+}: IListItemProps) => <ListItem href={href} tagName={tagName} title={title} />;
 
 export const Primary = Template.bind({});
 Primary.args = {

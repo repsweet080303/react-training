@@ -2,7 +2,7 @@ import React from 'react';
 import '../../../styles/main.scss';
 import { IButtonProps } from '@/types/interfaces';
 
-function Button({
+const Button = ({
   variant = 'primary',
   size = 'md',
   type,
@@ -11,18 +11,16 @@ function Button({
   title,
   tag: Component = 'button',
   onClick,
-}: IButtonProps) {
-  return (
-    <Component
-      type={type}
-      href={href}
-      className={`btn btn__${variant} btn--${size}`}
-      onClick={(e) => onClick?.(e)}
-    >
-      {children || title}
-    </Component>
-  );
-}
+}: IButtonProps) => (
+  <Component
+    type={type}
+    href={href}
+    className={`btn btn__${variant} btn--${size}`}
+    onClick={(e) => onClick?.(e)}
+  >
+    {children || title}
+  </Component>
+);
 
 Button.defaultProps = {
   type: 'button',

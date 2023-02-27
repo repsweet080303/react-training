@@ -20,6 +20,7 @@ export interface IButtonProps {
 }
 
 export interface IListItemProps {
+  id?: number;
   tagName: TypeItemTag;
   href?: string;
   title: string;

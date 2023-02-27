@@ -1,26 +1,17 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import List from '@/components/common/List';
-import { IListProps, IListItemProps } from '@/types/interfaces';
+import { IListProps } from '@/types/interfaces';
+import listNavigation from '@/constants';
 
 export default {
   title: 'PracticeOne/Common/List',
   component: List,
 } as ComponentMeta<typeof List>;
 
-const Template: ComponentStory<typeof List> = function list({
+const Template: ComponentStory<typeof List> = ({
   additionalClass,
-}: IListProps) {
-  const listNavigation: IListItemProps[] = [
-    { tagName: 'a', title: 'Home', href: '#home' },
-    { tagName: 'a', title: 'Product', href: '#product' },
-    { tagName: 'a', title: 'Pricing', href: '#pricing' },
-    { tagName: 'a', title: 'Contact', href: '#contact' },
-  ];
-  return (
-    <List additionalClass={additionalClass} listItem={listNavigation} />
-  );
-};
+}: IListProps) => <List additionalClass={additionalClass} listItem={listNavigation} />;
 
 export const ListRow = Template.bind({});
 ListRow.args = {
