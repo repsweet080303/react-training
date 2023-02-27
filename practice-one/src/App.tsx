@@ -1,11 +1,11 @@
 import React from 'react';
-import List from '@/components/common/List';
-import listNavigation from '@/constants';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
+import Icon from '@/components/Icon';
 
 function App() {
   return (
     <div className="App">
-      <List listItem={listNavigation} additionalClass="list--row" />
+      <Icon additionClass="icon-box" icon={faDownload} />
     </div>
   );
 }
