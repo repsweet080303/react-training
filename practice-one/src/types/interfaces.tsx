@@ -13,7 +13,6 @@ export interface IButtonProps {
   size: TypeSize;
   type?: TypeButton;
   children?: ReactNode;
-  title?: string;
   href?: string;
   tag?: TypeTag;
   onClick?: (event: React.MouseEvent) => void;

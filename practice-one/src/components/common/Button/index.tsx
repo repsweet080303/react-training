@@ -8,7 +8,6 @@ const Button = ({
   type,
   children,
   href,
-  title,
   tag: Component = 'button',
   onClick,
 }: IButtonProps) => (
@@ -18,7 +17,7 @@ const Button = ({
     className={`btn btn__${variant} btn--${size}`}
     onClick={(e) => onClick?.(e)}
   >
-    {children || title}
+    {children}
   </Component>
 );
 
