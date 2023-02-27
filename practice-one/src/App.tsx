@@ -1,6 +1,6 @@
 import React from 'react';
 import List from '@/components/common/List';
-import listNavigation from './constants';
+import listNavigation from '@/constants';
 
 function App() {
   return (
