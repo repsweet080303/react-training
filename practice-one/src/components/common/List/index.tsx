@@ -1,6 +1,6 @@
 import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
-import ListItem, { IProps } from '../ListItem';
+import ListItem, { IProps } from '@/components/common/ListItem';
 
 export interface IListProps {
   className: 'list--column' | 'list--row';

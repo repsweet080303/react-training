@@ -1,6 +1,6 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import Brand, { IProps } from './index';
+import Brand, { IProps } from '@/components/common/Brand';
 
 export default {
   title: 'PracticeOne/Common/Brand',

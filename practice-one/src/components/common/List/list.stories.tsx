@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import List, { IListProps } from './index';
-import { IProps } from '../ListItem';
+import List, { IListProps } from '@/components/common/List';
+import { IProps } from '@/components/common/ListItem';
 
 export default {
   title: 'PracticeOne/Common/List',

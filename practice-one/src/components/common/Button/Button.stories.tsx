@@ -1,6 +1,6 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import Button, { IProps } from './index';
+import Button, { IProps } from '@/components/common/Button';
 
 export default {
   title: 'PracticeOne/Common/Button',
