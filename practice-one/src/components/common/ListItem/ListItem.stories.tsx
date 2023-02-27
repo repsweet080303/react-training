@@ -1,6 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import ListItem, { IProps } from '@/components/common/ListItem';
+import ListItem from '@/components/common/ListItem';
+import { IListItemProps } from '@/types/interfaces';
 
 export default {
   title: 'PracticeOne/Common/ListItem',
@@ -11,7 +12,7 @@ const Template: ComponentStory<typeof ListItem> = function listItem({
   href,
   tagName,
   title,
-}: IProps) {
+}: IListItemProps) {
   return <ListItem href={href} tagName={tagName} title={title} />;
 };
 

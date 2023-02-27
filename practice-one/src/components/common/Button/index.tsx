@@ -1,18 +1,8 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
 import '../../../styles/main.scss';
+import { IButtonProps } from '@/types/interfaces';
 
-export interface IProps {
-  variant: 'primary' | 'secondary' | 'tertiary' | 'quaternary' | 'quinary';
-  size: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
-  type?: 'button' | 'submit';
-  children?: ReactNode;
-  title?: string;
-  href?: string;
-  tag?: 'button' | 'a';
-  onClick?: (event: React.MouseEvent) => void;
-}
-
-function Button(props: IProps) {
+function Button(props: IButtonProps) {
   const {
     variant = 'primary',
     size = 'md',

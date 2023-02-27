@@ -1,16 +1,14 @@
 import React from 'react';
 import '../../../styles/main.scss';
+import { IBrandProps } from '@/types/interfaces';
 
-export interface IProps {
-  href?: string;
-  title: string;
-}
-
-function Brand(props: IProps) {
+function Brand(props: IBrandProps) {
   const { href = '#', title } = props;
   return (
     <h1 className="brand">
-      <a className="brand__link" href={href}>{title}</a>
+      <a className="brand__link" href={href}>
+        {title}
+      </a>
     </h1>
   );
 }

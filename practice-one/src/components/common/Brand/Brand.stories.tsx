@@ -1,6 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import Brand, { IProps } from '@/components/common/Brand';
+import Brand from '@/components/common/Brand';
+import { IBrandProps } from '@/types/interfaces';
 
 export default {
   title: 'PracticeOne/Common/Brand',
@@ -10,7 +11,7 @@ export default {
 const Template: ComponentStory<typeof Brand> = function brand({
   href,
   title,
-}: IProps) {
+}: IBrandProps) {
   return <Brand href={href} title={title} />;
 };
 

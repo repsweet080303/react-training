@@ -1,11 +1,7 @@
 import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
-import ListItem, { IProps } from '@/components/common/ListItem';
-
-export interface IListProps {
-  className: 'list--column' | 'list--row';
-  listItem: IProps[];
-}
+import ListItem from '@/components/common/ListItem';
+import { IListProps } from '@/types/interfaces';
 
 function List(props: IListProps) {
   const itemId = uuidv4();

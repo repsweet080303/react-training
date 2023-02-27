@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import List, { IListProps } from '@/components/common/List';
-import { IProps } from '@/components/common/ListItem';
+import List from '@/components/common/List';
+import { IListProps, IListItemProps } from '@/types/interfaces';
 
 export default {
   title: 'PracticeOne/Common/List',
@@ -10,9 +10,8 @@ export default {
 
 const Template: ComponentStory<typeof List> = function list({
   className,
-  listItem,
 }: IListProps) {
-  const listNavigation: IProps[] = [
+  const listNavigation: IListItemProps[] = [
     { tagName: 'a', title: 'Home', href: '#home' },
     { tagName: 'a', title: 'Product', href: '#product' },
     { tagName: 'a', title: 'Pricing', href: '#pricing' },

@@ -1,6 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import Button, { IProps } from '@/components/common/Button';
+import Button from '@/components/common/Button';
+import { IButtonProps } from '@/types/interfaces';
 
 export default {
   title: 'PracticeOne/Common/Button',
@@ -14,7 +15,7 @@ const Template: ComponentStory<typeof Button> = function button({
   href,
   title,
   tag,
-}: IProps) {
+}: IButtonProps) {
   return (
     <Button
       type={type}
