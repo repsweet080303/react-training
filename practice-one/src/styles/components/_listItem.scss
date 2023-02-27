@@ -1,7 +1,8 @@
 .list-item {
+  padding: 12px 0;
+  
   &__link {
     color: $paragraph-color;
-    margin: 0;
     font: {
       family: $font-family-tertiary;
       size: $font-size-xsm;
@@ -12,11 +13,12 @@
     }
 
     @include tablet {
+      padding: 0;
       margin-left: 35px;
     }
 
     @include desktop {
-      margin: 0 21px 0 0;
+      margin-left: 21px;
     }
   }
 }

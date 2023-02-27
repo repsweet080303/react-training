@@ -1,5 +1,5 @@
 import React from 'react';
-import List from './components/common/List';
+import List from '@/components/common/List';
 import { IProps } from './components/common/ListItem';
 
 function App() {
