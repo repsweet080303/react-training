@@ -3,7 +3,6 @@
   
   &__link {
     color: $paragraph-color;
-    margin: 80px 0;
     font: {
       family: $font-family-tertiary;
       size: $font-size-xsm;
@@ -19,7 +18,7 @@
     }
 
     @include desktop {
-      margin: 0 21px 0 0;
+      margin-left: 21px;
     }
   }
 }
