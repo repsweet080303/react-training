@@ -1,0 +1,30 @@
+.navigation {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__desktop {
+    display: none;
+
+    @include tablet {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__mobile {
+    @include tablet {
+      display: none;
+    }
+  }
+
+  @include tablet {
+    height: 85px;
+    justify-content: space-around;
+  }
+
+  @include desktop {
+    height: 91px;
+  }
+}

@@ -1,9 +1,23 @@
 .list {
-  @include tablet {
-    display: flex;
-    flex-direction: row;
-  }
   &--column {
-    flex-direction: column;
+    float: right;
+    margin-right: 30px;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &--row {
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-right: 50px;
+    }
+  
+    @include desktop {
+      margin: 0 0 0 80px;
+    }
   }
 }

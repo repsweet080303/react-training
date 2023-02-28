@@ -5,6 +5,10 @@
   font-family: $font-family-primary;
   font-size: $font-size-xsm;
 
+  &:hover {
+    opacity: .9;
+  }
+
   &__primary {
     border: none;
     background-color: $color-primary;
@@ -15,13 +19,12 @@
   }
 
   &__tertiary {
+    margin-right: 28px;
     color: $color-primary;
     background-color: transparent;
     border: none;
 
     &:hover {
-      color: $color-light;
-      background-color: $color-primary;
       opacity: 0.8;
     }
   }
@@ -57,7 +60,7 @@
     padding: 8px 18px;
 
     @include tablet {
-      padding: 10px 22px;
+      padding: 13px 20px;
     }
 
     @include desktop {
@@ -74,6 +77,16 @@
 
     @include desktop {
       padding: 15px 40px;
+    }
+  }
+
+  &__group {
+
+    @include tablet {
+      margin: 0 5px 0 25px ;
+    }
+    @include desktop {
+      margin: 0 76px 0 225px ;
     }
   }
 }

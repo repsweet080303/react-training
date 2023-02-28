@@ -22,6 +22,7 @@ $line-height-sm: 1.1;
 
 // color variables
 $color-primary: #ff6551;
+$color-secondary: #252b42;
 $color-success: #2dc071;
 $color-mute: #bdbdbd;
 $color-danger: #e74040;
@@ -31,7 +32,6 @@ $color-active: #2435a1;
 $color-light: #fff;
 
 // text variables
-$text-primary-color: #252b42;
 $text-secondary-color: $color-active;
 $text-light-color: $color-light;
 $paragraph-color: #737373;
@@ -52,8 +52,8 @@ $btn-border-left-radius: 0 10px 10px 0;
 
 // card variables
 $card-bg: $color-light;
-$card-dark-bg: $text-primary-color;
-$card-action-color: $text-primary-color;
+$card-dark-bg: $color-secondary;
+$card-action-color: $color-secondary;
 $card-box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.07);
 $card-border-radius: 20px;
 $card-icon-opacity: 0.7;

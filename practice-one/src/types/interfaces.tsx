@@ -21,6 +21,7 @@ export interface IButtonProps {
 export interface IconProps extends Omit<FontAwesomeIconProps, 'icon'> {
   icon: IconDefinition;
   additionalClass: string;
+  onClick?: (e: React.MouseEvent) => void;
 }
 
 export interface IListItemProps {

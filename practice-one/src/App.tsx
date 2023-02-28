@@ -1,11 +1,10 @@
 import React from 'react';
-import { faDownload } from '@fortawesome/free-solid-svg-icons';
-import Icon from '@/components/common/Icon';
+import Header from '@/components/layouts/Header';
 
 function App() {
   return (
     <div className="App">
-      <Icon additionalClass="icon-box" icon={faDownload} />
+      <Header />
     </div>
   );
 }
