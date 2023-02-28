@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconProps } from '@/types/interfaces';
 
 const Icon = ({ icon, additionalClass }: IconProps) => (
-  <div className={additionalClass}>
+  <i className={additionalClass}>
     <FontAwesomeIcon icon={icon} />
-  </div>
+  </i>
 );
 
 export default Icon;

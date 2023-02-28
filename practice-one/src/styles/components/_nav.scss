@@ -1,0 +1,15 @@
+.navigation {
+  padding: 0;
+  margin: 0;
+
+  @include tablet {
+    margin: 0 auto;
+    display: flex;
+  }
+
+  @include desktop {
+    padding: 2px 12px;
+    margin: 13px 0 0 15px;
+    justify-content: start;
+  }
+}
