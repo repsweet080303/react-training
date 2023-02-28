@@ -1,4 +1,10 @@
 .icon {
+  &__bars {
+    margin: 15px;
+    font-size: 30px;
+    color: $color-secondary;
+  }
+
   &__arrow {
     padding-left: 3px;
     @include tablet {

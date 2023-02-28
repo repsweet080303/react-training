@@ -1,9 +1,14 @@
 .brand {
+  padding-left: 6px;
   cursor: pointer;
   font-size: $font-size-lg;
   font-family: $font-family-tertiary;
 
+  @include tablet {
+    padding-left: 0;
+  }
+
   &__link {
-    color: $text-primary-color;
+    color: $color-secondary;
   }
 }

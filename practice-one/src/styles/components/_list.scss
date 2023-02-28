@@ -2,11 +2,12 @@
   @include tablet {
     display: flex;
     flex-direction: row;
-    margin-left: 10px;
+    justify-content: space-around;
+    margin-right: 50px;
   }
 
   @include desktop {
-    margin-left: 80px;
+    margin: 0 0 0 80px;
   }
   &--column {
     flex-direction: column;
