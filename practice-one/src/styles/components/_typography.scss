@@ -1,0 +1,89 @@
+.typo {
+  &__tag {
+    width: 147px;
+  }
+
+  &__head {
+    width: 542px;
+  }
+
+  &__sub {
+    width: 338px;
+  }
+
+  &__feature {
+    width: 221px;
+  }
+
+  &__primary {
+    color: $color-primary;
+  }
+
+  &__secondary {
+    color: $color-secondary;
+  }
+
+  &__paragrap {
+    color: $paragraph-color;
+  }
+
+  &__semibold {
+    font-family: $font-family-primary;
+  }
+
+  &__bold {
+    font-family: $font-family-tertiary;
+  }
+
+  &__medium {
+    font-family: $font-family-secondary;
+  }
+
+  &__xs {
+    font-size: $font-size-xs;
+
+    @include tablet {
+      font-size: $font-size-xsm;
+    }
+  }
+
+  &__sm {
+    font-size: $font-size-xsm;
+
+    @include tablet {
+      font-size: $font-size-sm;
+    }
+  }
+
+  &__md {
+    font-size: $font-size-md;
+
+    @include tablet {
+      font-size: $font-size-lg;
+    }
+  }
+
+  &__lg {
+    font-size: $font-size-lg;
+
+    @include tablet {
+      font-size: $font-size-xlg;
+    }
+  }
+
+  &__xl {
+    font-size: $font-size-xlg;
+
+    @include tablet {
+      font-size: $font-size-xl;
+    }
+  }
+
+  &__xxl {
+    font-size: $font-size-xxl;
+
+    @include tablet {
+      font-size: $font-size-xxxl;
+    }
+  }
+}
