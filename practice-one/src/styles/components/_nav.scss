@@ -3,13 +3,14 @@
   margin: 0;
 
   @include tablet {
-    margin: 0 auto;
     display: flex;
+    height: 85px;
+    align-items: center;
+    justify-content: space-around;
   }
 
   @include desktop {
-    padding: 2px 12px;
-    margin: 13px 0 0 15px;
-    justify-content: start;
+    height: 91px;
+    align-items: center;
   }
 }

@@ -16,7 +16,7 @@ const Header = () => (
           <Button type="button" size="xs" variant="tertiary">
             Login
           </Button>
-          <Button type="button" size="sm" variant="primary">
+          <Button type="button" size="md" variant="primary">
             JOIN US
             <Icon icon={faArrowRight} additionalClass="icon__arrow" />
           </Button>

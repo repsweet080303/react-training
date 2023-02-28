@@ -1,0 +1,12 @@
+.icon {
+  &__arrow {
+    padding-left: 3px;
+    @include tablet {
+      padding-left: 6px;
+    }
+
+    @include desktop {
+      padding-left: 15px;
+    }
+  }
+}
