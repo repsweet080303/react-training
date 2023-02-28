@@ -2,7 +2,16 @@ import React, { ReactNode } from 'react';
 import { FontAwesomeIconProps } from '@fortawesome/react-fontawesome';
 import { IconDefinition } from '@fortawesome/fontawesome-common-types';
 import {
-  TypeVariant, TypeSize, TypeButton, TypeItemTag, TypeList,
+  TypeVariant,
+  TypeSize,
+  TypeButton,
+  TypeItemTag,
+  TypeList,
+  ClassTypo,
+  StatusTypo,
+  WeightTypo,
+  SizeTypo,
+  TagTypo,
 } from '@/types';
 
 export interface IBrandProps {
@@ -34,4 +43,13 @@ export interface IListItemProps {
 export interface IListProps {
   additionalClass: TypeList;
   listItem: IListItemProps[];
+}
+
+export interface ITypoProps {
+  children: ReactNode;
+  classTypo?: ClassTypo;
+  statusTypo: StatusTypo;
+  weightTypo: WeightTypo;
+  sizeTypo: SizeTypo;
+  tagTypo: TagTypo;
 }
