@@ -12,11 +12,9 @@ const Template: ComponentStory<typeof Button> = ({
   variant,
   size,
   type,
-  href,
-  tag,
   children,
 }: IButtonProps) => (
-  <Button type={type} variant={variant} size={size} href={href} tag={tag}>
+  <Button type={type} variant={variant} size={size}>
     {children}
   </Button>
 );
