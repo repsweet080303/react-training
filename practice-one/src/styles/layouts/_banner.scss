@@ -1,0 +1,38 @@
+.banner {
+  margin: 160px 0;
+
+  &__girl-children {
+    background-image: url(../assets/images/girl-children.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 200px auto 0;
+    width: 400px;
+    height: 576px;
+
+    @include desktop {
+      margin: 0;
+      width: 536px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    @include desktop {
+      flex-direction: row;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 300px;
+    
+    @include desktop {
+      margin: auto 0 auto auto;
+    }
+  }
+}

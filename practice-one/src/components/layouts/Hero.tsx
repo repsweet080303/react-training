@@ -1,10 +1,10 @@
 import React from 'react';
-import Typo from '../common/Typo';
+import Typo from '@/components/common/Typo';
 import Button from '@/components/common/Button';
-import CardCourse from '@/components/common/CardCourse';
+import CardCourse from '@/components/common/Card/Course';
 
 const Hero = () => (
-  <main className="hero">
+  <section className="hero">
     <div className="container">
       <div className="hero__children" />
       <div className="hero__content">
@@ -68,7 +68,7 @@ const Hero = () => (
         />
       </div>
     </div>
-  </main>
+  </section>
 );
 
 export default Hero;

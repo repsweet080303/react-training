@@ -6,7 +6,7 @@
   font-size: $font-size-xsm;
 
   &:hover {
-    opacity: .9;
+    opacity: 0.9;
   }
 
   &__primary {
@@ -19,13 +19,16 @@
   }
 
   &__tertiary {
-    margin-right: 28px;
+    margin: 0 auto;
     color: $color-primary;
     background-color: transparent;
     border: none;
 
     &:hover {
       opacity: 0.8;
+    }
+    @include desktop {
+      margin:0 28px 0 0;
     }
   }
 
@@ -49,10 +52,12 @@
   }
 
   &--sm {
+    width: 125px;
     padding: 8px 15px;
 
     @include desktop {
-      padding: 10px 20px;
+      width: 100px;
+      padding: 10px 0px;
     }
   }
 
@@ -81,12 +86,11 @@
   }
 
   &__group {
-
     @include tablet {
-      margin: 0 5px 0 25px ;
+      margin: 0 5px 0 25px;
     }
     @include desktop {
-      margin: 0 76px 0 225px ;
+      margin: 0 76px 0 225px;
     }
   }
 }

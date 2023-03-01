@@ -1,6 +1,6 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import CardCourse from '@/components/common/CardCourse';
+import CardCourse from '@/components/common/Card/Course';
 import { ICardCourse } from '@/types/interfaces';
 
 export default {
