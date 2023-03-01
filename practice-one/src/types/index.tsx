@@ -20,7 +20,7 @@ export type ClassTypo =
   | 'typo__feature';
 export type StatusTypo = 'typo__primary' | 'typo__secondary' | 'typo__paragraph';
 
-export type WeightTypo = 'typo__semibold' | 'typo__bold' | 'typo__medium';
+export type WeightTypo = 'typo__semibold' | 'typo__bold' | 'typo__medium' | 'typo__regular';
 
 export type SizeTypo = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl';
 

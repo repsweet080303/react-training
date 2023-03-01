@@ -1,0 +1,100 @@
+.card-course {
+  width: 328px;
+  height: 300px;
+  margin: 20px auto;
+  background-color: $card-bg;
+  box-shadow: $card-box-shadow;
+
+  &__wrapper {
+    padding: 35px 40px;
+  }
+
+  &__background {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--expert {
+      background-color: $color-primary;
+    }
+
+    &--training {
+      background-color: $color-active;
+    }
+
+    &--life {
+      background-color: $color-golden;
+    }
+  }
+
+  &__icon {
+    width: 58px;
+    height: 65px;
+    margin: 0 auto;
+
+    @include desktop {
+      margin: 0;
+      width: 70px;
+      height: 76px;
+    }
+
+    &--expert {
+      @extend .course-icon;
+      background-image: url(../assets/icons/blackboard.svg);
+    }
+
+    &--training {
+      @extend .course-icon;
+      background-image: url(../assets/icons/tele.svg);
+    }
+
+    &--life {
+      @extend .course-icon;
+      background-image: url(../assets/icons/graduation.svg);
+    }
+  }
+
+  @include tablet {
+    margin: 30px;
+  }
+
+  @include desktop {
+    margin: 0;
+    text-align: start;
+    z-index: 1;
+  }
+
+  &:hover {
+    &__wrapper {
+      padding: 37px 43px;
+      
+      @include desktop {
+        padding: 35px 60px 30px 40px;
+      }
+    }
+    height: 310px;
+  }
+
+  &__description {
+    margin-top: 20px;
+  }
+
+  &__straight {
+    width: 50px;
+    height: 4px;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: $color-danger;
+
+    @include desktop {
+      margin: 20px 0;
+    }
+  }
+}
+
+// extend class
+.course-icon {
+  width: 33px;
+  height: 32px;
+}
