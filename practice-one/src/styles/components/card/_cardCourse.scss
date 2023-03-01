@@ -5,6 +5,14 @@
   background-color: $card-bg;
   box-shadow: $card-box-shadow;
 
+  &__group {
+    margin-top: 80px;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
   &__wrapper {
     padding: 35px 40px;
   }
@@ -54,6 +62,14 @@
       background-image: url(../assets/icons/graduation.svg);
     }
   }
+  
+  &:last-child {
+    margin: 0 auto;
+
+    @include desktop {
+      margin: 0;
+    }
+  }
 
   @include tablet {
     margin: 30px;
@@ -68,7 +84,7 @@
   &:hover {
     &__wrapper {
       padding: 37px 43px;
-      
+
       @include desktop {
         padding: 35px 60px 30px 40px;
       }

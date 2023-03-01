@@ -1,0 +1,28 @@
+.hero {
+  position: relative;
+  margin: 87px 0 80px 0;
+
+  &__children {
+    @include desktop {
+      position: absolute;
+      right: 0;
+      top: -80px;
+      background-image: url(../assets/images/boy-children.png);
+      background-repeat: no-repeat;
+      width: 625px;
+      height: 721px;
+    }
+  }
+
+  &__content {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    @include desktop {
+      align-items: start;
+    }
+  }
+}

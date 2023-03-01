@@ -5,10 +5,15 @@
 
   &__head {
     width: 542px;
+    text-align: center;
+
+    @include desktop {
+     text-align: start;
+    }
   }
 
   &__sub {
-    width: 338px;
+    width: 334px;
   }
 
   &__feature {
@@ -68,10 +73,6 @@
 
   &__md {
     font-size: $font-size-md;
-
-    @include tablet {
-      font-size: $font-size-lg;
-    }
   }
 
   &__lg {
