@@ -5,6 +5,11 @@
 
   &__head {
     width: 542px;
+    text-align: center;
+
+    @include desktop {
+     text-align: start;
+    }
   }
 
   &__sub {
