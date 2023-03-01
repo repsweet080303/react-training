@@ -53,3 +53,9 @@ export interface ITypoProps {
   sizeTypo: SizeTypo;
   tagTypo: TagTypo;
 }
+
+export interface ICardCourse {
+  modify: string,
+  title: string;
+  description: string;
+}
