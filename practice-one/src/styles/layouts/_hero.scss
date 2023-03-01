@@ -1,0 +1,14 @@
+.hero {
+  position: relative;
+
+  &__children {
+    @include desktop {
+      position: absolute;
+      right: 0;
+      background-image: url(../assets/images/boy-children.png);
+      background-repeat: no-repeat;
+      width: 625px;
+      height: 721px;
+    }
+  }
+}
