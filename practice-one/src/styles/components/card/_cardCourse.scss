@@ -2,10 +2,12 @@
   width: 328px;
   height: 300px;
   margin: 20px auto;
-  padding: 35px 40px;
-  text-align: center;
   background-color: $card-bg;
   box-shadow: $card-box-shadow;
+
+  &__wrapper {
+    padding: 35px 40px;
+  }
 
   &__background {
     border-radius: 10px;
@@ -15,6 +17,14 @@
 
     &--expert {
       background-color: $color-primary;
+    }
+
+    &--training {
+      background-color: $color-active;
+    }
+
+    &--life {
+      background-color: $color-golden;
     }
   }
 
@@ -33,6 +43,16 @@
       @extend .course-icon;
       background-image: url(../assets/icons/blackboard.svg);
     }
+
+    &--training {
+      @extend .course-icon;
+      background-image: url(../assets/icons/tele.svg);
+    }
+
+    &--life {
+      @extend .course-icon;
+      background-image: url(../assets/icons/graduation.svg);
+    }
   }
 
   @include tablet {
@@ -46,11 +66,28 @@
   }
 
   &:hover {
-    padding: 37px 43px;
+    &__wrapper {
+      padding: 37px 43px;
+      @include desktop {
+        padding: 35px 60px 30px 40px;
+      }
+    }
+    height: 310px;
+  }
+
+  &__description {
+    margin-top: 20px;
+  }
+
+  &__straight {
+    width: 50px;
+    height: 4px;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: $color-danger;
 
     @include desktop {
-      height: 310px;
-      padding: 35px 60px 30px 40px;
+      margin: 20px 0;
     }
   }
 }

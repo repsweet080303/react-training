@@ -13,6 +13,13 @@
 
   &__feature {
     width: 221px;
+    text-align: center;
+    margin: 0 auto;
+
+    @include desktop {
+      margin: 0;
+      text-align: start;
+    }
   }
 
   &__primary {
@@ -37,6 +44,10 @@
 
   &__medium {
     font-family: $font-family-secondary;
+  }
+
+  &__regular {
+    font-family: $font-family-quaterdary;
   }
 
   &__xs {
