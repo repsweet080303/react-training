@@ -74,11 +74,7 @@
   }
 
   &__xs {
-    font-size: $font-size-xs;
-
-    @include tablet {
       font-size: $font-size-xsm;
-    }
   }
 
   &__sm {
@@ -90,7 +86,10 @@
   }
 
   &__md {
-    font-size: $font-size-md;
+    font-size: $font-size-lg;
+    @include tablet {
+      font-size: $font-size-md;
+    }
   }
 
   &__lg {
