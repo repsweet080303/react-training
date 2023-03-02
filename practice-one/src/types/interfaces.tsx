@@ -12,6 +12,7 @@ import {
   WeightTypo,
   SizeTypo,
   TagTypo,
+  TypeStraight,
 } from '@/types';
 
 export interface IBrandProps {
@@ -58,4 +59,8 @@ export interface ICardCourse {
   modify: string,
   title: string;
   description: string;
+}
+
+export interface IStraightProps {
+  additionalClass: TypeStraight;
 }
