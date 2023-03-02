@@ -13,6 +13,8 @@ import {
   SizeTypo,
   TagTypo,
   TypeStraight,
+  TypeLogoClass,
+  TypeLogoSize,
 } from '@/types';
 
 export interface IBrandProps {
@@ -63,4 +65,11 @@ export interface ICardCourse {
 
 export interface IStraightProps {
   additionalClass: TypeStraight;
+}
+
+export interface ILogoProps {
+  href: string;
+  addtionalClass: TypeLogoClass;
+  size: TypeLogoSize;
+  alt?: string;
 }
