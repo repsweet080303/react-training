@@ -1,0 +1,14 @@
+.label {
+  background-color: red;
+  color: #fff;
+  text-align: center;
+  border-radius: 3px;
+
+  &--sm {
+    width: 52px;
+  }
+
+  &--md {
+    width: 62px;
+  }
+}

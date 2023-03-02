@@ -15,6 +15,7 @@ import {
   TypeStraight,
   TypeLogoClass,
   TypeLogoSize,
+  TypeLabelSize,
 } from '@/types';
 
 export interface IBrandProps {
@@ -72,4 +73,9 @@ export interface ILogoProps {
   addtionalClass: TypeLogoClass;
   size?: TypeLogoSize;
   alt?: string;
+}
+
+export interface ILabelProps {
+  title: string;
+  size: TypeLabelSize;
 }
