@@ -70,6 +70,6 @@ export interface IStraightProps {
 export interface ILogoProps {
   href: string;
   addtionalClass: TypeLogoClass;
-  size: TypeLogoSize;
+  size?: TypeLogoSize;
   alt?: string;
 }

@@ -1,0 +1,31 @@
+.company {
+  &__wrapper {
+    display: flex;
+    padding: 50px;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
+  &__logo {
+    @include tablet {
+      width: 120px;
+    }
+
+    @include desktop {
+      width: auto;
+    }
+
+    &--sm {
+      @include tablet {
+        width: 80px;
+      }
+
+      @include desktop {
+        width: auto;
+      }
+    }
+  }
+}
