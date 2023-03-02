@@ -29,6 +29,6 @@ export type TagTypo = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p';
 
 export type TypeStraight = 'straight__medium' | 'straight__long';
 
-export type TypeLogoClass = 'logo__company' | 'logo__other';
+export type TypeLogoClass = 'company__logo' | 'other__logo';
 
 export type TypeLogoSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl';

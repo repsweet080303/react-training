@@ -10,7 +10,7 @@ const Logo = ({
   <div>
     <img
       src={href}
-      className={`${addtionalClass} logo__${size}`}
+      className={`${addtionalClass} company__logo--${size}`}
       alt={alt}
     />
   </div>
