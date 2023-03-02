@@ -100,18 +100,6 @@
   &__description {
     margin-top: 20px;
   }
-
-  &__straight {
-    width: 50px;
-    height: 4px;
-    margin: 20px auto;
-    border-radius: 10px;
-    background-color: $color-danger;
-
-    @include desktop {
-      margin: 20px 0;
-    }
-  }
 }
 
 // extend class

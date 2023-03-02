@@ -3,6 +3,7 @@ import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import Typo from '@/components/common/Typo';
 import Button from '@/components/common/Button';
 import Icon from '@/components/common/Icon';
+import Straight from '@/components/common/Straight';
 
 const Banner = () => (
   <section className="banner">
@@ -10,7 +11,7 @@ const Banner = () => (
       <div className="banner__wrapper">
         <div className="banner__girl-children" />
         <div className="banner__content">
-          <div className="straight" />
+          <Straight additionalClass="straight__long" />
           <Typo
             statusTypo="typo__secondary"
             sizeTypo="xl"

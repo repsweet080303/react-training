@@ -1,6 +1,7 @@
 import React from 'react';
 import { ICardCourse } from '@/types/interfaces';
 import Typo from '@/components/common/Typo';
+import Straight from '@/components/common/Straight';
 
 const CardCourse = ({ modify, title, description }: ICardCourse) => (
   <div className="card card-course">
@@ -20,7 +21,7 @@ const CardCourse = ({ modify, title, description }: ICardCourse) => (
         >
           {title}
         </Typo>
-        <div className="card-course__straight" />
+        <Straight additionalClass="straight__medium" />
         <Typo
           sizeTypo="xs"
           statusTypo="typo__paragraph"

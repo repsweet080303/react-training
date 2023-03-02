@@ -26,3 +26,5 @@ export type WeightTypo = 'typo__semibold' | 'typo__bold' | 'typo__medium' | 'typ
 export type SizeTypo = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl';
 
 export type TagTypo = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p';
+
+export type TypeStraight = 'straight__medium' | 'straight__long';
