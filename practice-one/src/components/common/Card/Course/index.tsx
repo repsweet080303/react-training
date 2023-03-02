@@ -1,15 +1,13 @@
 import React from 'react';
 import { ICardCourse } from '@/types/interfaces';
-import Typo from '../Typo';
+import Typo from '@/components/common/Typo';
 
-const CardCourse = ({
-  modify,
-  title,
-  description,
-}: ICardCourse) => (
+const CardCourse = ({ modify, title, description }: ICardCourse) => (
   <div className="card card-course">
     <div className="card-course__wrapper">
-      <div className={`card-course__icon card-course__background card-course__background--${modify}`}>
+      <div
+        className={`card-course__icon card-course__background card-course__background--${modify}`}
+      >
         <div className={`card-course__icon--${modify}`} />
       </div>
       <div className="card-course__description">

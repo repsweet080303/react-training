@@ -1,6 +1,7 @@
 .hero {
   position: relative;
   margin: 87px 0 80px 0;
+  height: 1450px;
 
   &__children {
     @include desktop {
@@ -24,5 +25,13 @@
     @include desktop {
       align-items: start;
     }
+  }
+
+  @include tablet {
+    height: 1100px;
+  }
+
+  @include desktop {
+    height: 800px;
   }
 }

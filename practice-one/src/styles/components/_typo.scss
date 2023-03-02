@@ -8,18 +8,36 @@
     text-align: center;
 
     @include desktop {
-     text-align: start;
+      text-align: start;
     }
   }
 
   &__sub {
     width: 334px;
+    text-align: center;
+    margin: 0 auto;
+
+    @include desktop {
+      margin: 0;
+      text-align: start;
+    }
   }
 
   &__feature {
     width: 221px;
     text-align: center;
     margin: 0 auto;
+
+    @include desktop {
+      margin: 0;
+      text-align: start;
+    }
+  }
+
+  &__title {
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
 
     @include desktop {
       margin: 0;
@@ -56,11 +74,7 @@
   }
 
   &__xs {
-    font-size: $font-size-xs;
-
-    @include tablet {
       font-size: $font-size-xsm;
-    }
   }
 
   &__sm {
@@ -72,7 +86,10 @@
   }
 
   &__md {
-    font-size: $font-size-md;
+    font-size: $font-size-lg;
+    @include tablet {
+      font-size: $font-size-md;
+    }
   }
 
   &__lg {

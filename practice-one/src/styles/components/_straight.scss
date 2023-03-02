@@ -1,0 +1,10 @@
+.straight {
+  width: 94px;
+  height: 6px;
+  margin: 20px auto;
+  background-color: $color-danger;
+
+  @include desktop {
+    margin: 20px 0;
+  }
+}
