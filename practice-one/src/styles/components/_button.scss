@@ -28,7 +28,7 @@
       opacity: 0.8;
     }
     @include desktop {
-      margin:0 28px 0 0;
+      margin: 0 28px 0 0;
     }
   }
 
@@ -41,6 +41,13 @@
   &__quinary {
     @extend .btn__quaternary;
     border-radius: 37px;
+    padding: 12px 16px;
+    margin: 0 auto;
+
+    @include desktop {
+      margin: 0;
+      padding: 15px 20px;
+    }
   }
 
   &--xs {
@@ -52,13 +59,7 @@
   }
 
   &--sm {
-    width: 125px;
-    padding: 8px 15px;
-
-    @include desktop {
-      width: 100px;
-      padding: 10px 0px;
-    }
+    width: 141px;
   }
 
   &--md {

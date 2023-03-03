@@ -78,4 +78,17 @@ export interface ILogoProps {
 export interface ILabelProps {
   title: string;
   size: TypeLabelSize;
+  additionalClass?: string;
+}
+
+export interface ICardProduct {
+  imageHeader: string;
+  alt: string;
+  tag: string;
+  title: string;
+  vote: number;
+  description: string;
+  downloaded: number;
+  oldPrice: number;
+  newPrice: number;
 }

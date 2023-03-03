@@ -19,4 +19,21 @@
   &__chevron-right {
     padding-left: 4px;
   }
+
+  &__block {
+    padding: 10px 10px;
+    border-radius: 50%;
+    font-size: $font-size-md;
+    color: $card-action-color;
+    background-color: $card-bg;
+
+    &:hover {
+      opacity: $card-icon-opacity;
+    }
+  }
+
+  &__start {
+    padding-right: 2px;
+    color: $color-golden;
+  }
 }
