@@ -35,3 +35,5 @@ export type TypeLogoClass = 'company__logo' | 'other__logo';
 export type TypeLogoSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl';
 
 export type TypeLabelSize = 'sm' | 'md';
+
+export type TypeItemIcon = 'advantage' | 'disadvantage';
