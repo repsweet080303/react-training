@@ -26,7 +26,7 @@ const CardProduct = ({
 }: ICardProduct) => (
   <div className="card-product">
     <div className="card-product__head">
-      <img src={imageHeader} alt={alt} />
+      <img className="card-product__img" src={imageHeader} alt={alt} />
       <Label size="sm" title="sale" additionalClass="card-product__label" />
       <div className="card-product__icon-group">
         <div className="icon__block">

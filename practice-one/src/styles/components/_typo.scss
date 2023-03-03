@@ -16,10 +16,23 @@
     width: 280px;
     text-align: center;
     margin: 0 auto;
-    
+
     @include desktop {
       margin: 0;
       text-align: start;
+    }
+  }
+
+  &__sub {
+    &--light {
+      width: 463px;
+      text-align: center;
+      margin: 0 auto;
+
+      @include desktop {
+        margin: 0;
+        text-align: start;
+      }
     }
   }
 
@@ -51,6 +64,10 @@
 
   &__secondary {
     color: $color-secondary;
+
+    &--light {
+      color: $color-light;
+    }
   }
 
   &__paragraph {
@@ -74,7 +91,7 @@
   }
 
   &__xs {
-      font-size: $font-size-xsm;
+    font-size: $font-size-xsm;
   }
 
   &__sm {

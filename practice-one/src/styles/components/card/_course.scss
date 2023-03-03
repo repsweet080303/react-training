@@ -4,7 +4,7 @@
   margin: 20px auto;
   background-color: $card-bg;
   box-shadow: $card-box-shadow;
-  
+
   @include tablet {
     width: 328px;
     height: 300px;
@@ -67,7 +67,7 @@
       background-image: url(../assets/icons/graduation.svg);
     }
   }
-  
+
   &:last-child {
     margin: 0 auto;
 
