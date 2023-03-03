@@ -8,7 +8,7 @@
 }
 
 .container {
-  margin: 0 auto;
+  margin: 80px auto;
 
   @include tablet {
     max-width: 992px;
@@ -16,5 +16,11 @@
 
   @include desktop {
     max-width: 1050px;
+  }
+
+  &--large {
+    @extend .container;
+    margin: 0 auto;
+    padding: 160px 0;
   }
 }
