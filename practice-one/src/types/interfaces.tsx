@@ -56,6 +56,7 @@ export interface ITypoProps {
   weightTypo: WeightTypo;
   sizeTypo: SizeTypo;
   tagTypo: TagTypo;
+  additionalTypo?: string;
 }
 
 export interface ICardCourse {
@@ -91,4 +92,9 @@ export interface ICardProduct {
   downloaded: number;
   oldPrice: number;
   newPrice: number;
+}
+
+export interface IPrice {
+  price: number;
+  time: string;
 }

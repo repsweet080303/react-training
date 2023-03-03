@@ -8,11 +8,12 @@ const Typo = ({
   statusTypo,
   tagTypo = 'h3',
   weightTypo,
+  additionalTypo,
 }: ITypoProps) => {
   const Typography = tagTypo;
   return (
     <Typography
-      className={`${classTypo} ${statusTypo} ${weightTypo} typo__${sizeTypo}`}
+      className={`${additionalTypo} ${classTypo} ${statusTypo} ${weightTypo} typo__${sizeTypo}`}
     >
       {children}
     </Typography>
