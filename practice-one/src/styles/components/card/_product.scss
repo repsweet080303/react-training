@@ -1,0 +1,95 @@
+.card-product {
+  width: 341px;
+  margin: 40px auto;
+  background-color: $card-bg;
+
+  &__head {
+    position: relative;
+    width: 348px;
+    height: 300px;
+  }
+
+  &__body {
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 25px 35px 25px;
+  }
+
+  &__label {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+  &__icon-group {
+    display: flex;
+    justify-content: space-between;
+    top: 236px;
+    left: 96px;
+    width: 140px;
+    position: absolute;
+  }
+
+  &__tag-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__download-wrapper {
+    display: flex;
+    color: $paragraph-color;
+    margin: 0 auto;
+
+    @include desktop {
+      margin: 0;
+    }
+  }
+
+  &__downloads {
+    padding-left: 8px;
+  }
+
+  &__rate {
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    padding: 5px 3px;
+    color: $text-light-color;
+    background-color: $card-dark-bg;
+    border-radius: $card-border-radius;
+    font: {
+      size: $font-size-sm;
+      family: $font-family-secondary;
+    }
+  }
+
+  &__vote {
+    padding-top: 1px;
+  }
+
+  &__price {
+    display: flex;
+    color: $color-mute;
+    margin: 0 auto;
+
+    @include desktop {
+      margin: 0;
+    }
+  }
+
+  &__new-price {
+    padding-left: 4px;
+    color: $text-secondary-color;
+  }
+
+  @include tablet {
+    margin: 30px 8px;
+  }
+
+  @include desktop {
+    margin: 0;
+  }
+}

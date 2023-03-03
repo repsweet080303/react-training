@@ -14,7 +14,7 @@ const HomePage = () => (
     <CardProduct
       imageHeader="src/assets/images/keyboard-cover.png"
       alt="keyboard cover"
-      tag="training Courses"
+      tag="Training Courses"
       title="Video in Live Action"
       description="We focus on ergonomics and meeting
                    you where you work. It's only a

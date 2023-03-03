@@ -13,10 +13,10 @@
   }
 
   &__sub {
-    width: 334px;
+    width: 280px;
     text-align: center;
     margin: 0 auto;
-
+    
     @include desktop {
       margin: 0;
       text-align: start;
