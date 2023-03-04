@@ -16,6 +16,7 @@ import {
   TypeLogoClass,
   TypeLogoSize,
   TypeLabelSize,
+  TypeItemIcon,
 } from '@/types';
 
 export interface IBrandProps {
@@ -97,4 +98,10 @@ export interface ICardProduct {
 export interface IPrice {
   price: number;
   time: string;
+}
+
+export interface IScope {
+  typeScope: TypeItemIcon;
+  icon: IconDefinition;
+  children: ReactNode;
 }

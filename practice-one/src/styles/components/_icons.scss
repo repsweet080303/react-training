@@ -36,4 +36,15 @@
     padding-right: 2px;
     color: $color-golden;
   }
+
+  &__advantage {
+    font-size: $font-size-xlg;
+    color: $color-success;
+    padding-right: 8px;
+  }
+
+  &__disadvantage {
+    @extend .icon__advantage;
+    color: $color-mute;
+  }
 }
