@@ -17,6 +17,7 @@ import {
   TypeLogoSize,
   TypeLabelSize,
   TypeItemIcon,
+  TypeOptionsPlan,
 } from '@/types';
 
 export interface IBrandProps {
@@ -61,7 +62,7 @@ export interface ITypoProps {
 }
 
 export interface ICardCourse {
-  modify: string,
+  modify: string;
   title: string;
   description: string;
 }
@@ -104,4 +105,10 @@ export interface IScope {
   typeScope: TypeItemIcon;
   icon: IconDefinition;
   children: ReactNode;
+}
+
+export interface ICardPlan {
+  options: TypeOptionsPlan;
+  description: string;
+  text: string;
 }

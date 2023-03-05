@@ -1,0 +1,20 @@
+.card-plan {
+  width: 240px;
+  height: 788px;
+  margin: 0 auto;
+  padding: 50px 44px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: $card-bg;
+  box-shadow: $card-box-shadow;
+
+  @include desktop {
+    margin: 0;
+    text-align: start;
+    align-items: flex-start;
+  }
+}

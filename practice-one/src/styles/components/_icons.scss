@@ -47,4 +47,12 @@
     @extend .icon__advantage;
     color: $color-mute;
   }
+
+  &__wrapper {
+    padding: 24px;
+    border-radius: 50%;
+    color: $text-light-color;
+    font-size: $icon-heart-font-size;
+    background-color: $color-primary;
+  }
 }
