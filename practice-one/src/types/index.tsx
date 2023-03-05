@@ -18,7 +18,9 @@ export type ClassTypo =
   | 'typo__head'
   | 'typo__sub'
   | 'typo__sub--light'
+  | 'typo__text'
   | 'typo__feature'
+  | 'typo__feature--start'
   | 'typo__title';
 export type StatusTypo = 'typo__primary' | 'typo__secondary' | 'typo__secondary--light' | 'typo__paragraph';
 
@@ -37,3 +39,5 @@ export type TypeLogoSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl';
 export type TypeLabelSize = 'sm' | 'md';
 
 export type TypeItemIcon = 'advantage' | 'disadvantage';
+
+export type TypeOptionsPlan = 'PAYMENT' | 'FREE';

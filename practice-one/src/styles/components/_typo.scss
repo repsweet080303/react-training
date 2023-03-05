@@ -45,6 +45,25 @@
       margin: 0;
       text-align: start;
     }
+
+    &--start {
+      text-align: start;
+      
+      @include desktop {
+        margin: 0;
+      }
+    }
+  }
+
+  &__text {
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+
+    @include desktop {
+      margin: 0;
+      text-align: start;
+    }
   }
 
   &__title {
