@@ -99,4 +99,11 @@
       margin: 0 76px 0 225px;
     }
   }
+
+  &__subscribe {
+    margin: 0;
+    padding: 21px 25px;
+    border-radius: $btn-border-left-radius;
+    font-family: $font-family-quaterdary;
+  }
 }

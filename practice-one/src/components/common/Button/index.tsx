@@ -6,11 +6,12 @@ const Button = ({
   variant = 'primary',
   size = 'md',
   children,
+  additionalClass,
   onClick,
 }: IButtonProps) => (
   <button
     type="button"
-    className={`btn btn__${variant} btn--${size}`}
+    className={`btn btn__${variant} btn--${size} ${additionalClass}`}
     onClick={(e) => onClick?.(e)}
   >
     {children}

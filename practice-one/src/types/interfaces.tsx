@@ -18,6 +18,7 @@ import {
   TypeLabelSize,
   TypeItemIcon,
   TypeOptionsPlan,
+  TypeForm,
 } from '@/types';
 
 export interface IBrandProps {
@@ -26,6 +27,7 @@ export interface IBrandProps {
 }
 
 export interface IButtonProps {
+  additionalClass?: string;
   variant: TypeVariant;
   size: TypeSize;
   type: TypeButton;
@@ -133,4 +135,10 @@ export interface IFeedback {
   children: ReactNode;
   url: string;
   alt?: string;
+}
+
+export interface IInput {
+  placeholder: string;
+  type: TypeForm;
+  children: ReactNode;
 }
