@@ -21,9 +21,7 @@
       margin: 0;
       text-align: start;
     }
-  }
 
-  &__sub {
     &--light {
       width: 463px;
       text-align: center;
@@ -48,11 +46,16 @@
 
     &--start {
       text-align: start;
-      
+
       @include desktop {
         margin: 0;
       }
     }
+  }
+
+  &__desc {
+    @extend .typo__sub--light;
+    color: $paragraph-color;
   }
 
   &__text {
@@ -123,12 +126,21 @@
 
   &__md {
     font-size: $font-size-lg;
+
     @include tablet {
       font-size: $font-size-md;
     }
   }
 
   &__lg {
+    font-size: $font-size-md;
+
+    @include tablet {
+      font-size: $font-size-lg;
+    }
+  }
+
+  &__xlg {
     font-size: $font-size-lg;
 
     @include tablet {
@@ -144,7 +156,7 @@
     }
   }
 
-  &__xxl {
+  &__xxxl {
     font-size: $font-size-xxl;
 
     @include tablet {

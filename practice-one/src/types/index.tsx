@@ -19,6 +19,7 @@ export type ClassTypo =
   | 'typo__sub'
   | 'typo__sub--light'
   | 'typo__text'
+  | 'typo__desc'
   | 'typo__feature'
   | 'typo__feature--start'
   | 'typo__title';
@@ -26,7 +27,7 @@ export type StatusTypo = 'typo__primary' | 'typo__secondary' | 'typo__secondary-
 
 export type WeightTypo = 'typo__semibold' | 'typo__bold' | 'typo__medium' | 'typo__regular';
 
-export type SizeTypo = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl';
+export type SizeTypo = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxxl';
 
 export type TagTypo = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p';
 

@@ -41,7 +41,7 @@ const CardPlan = ({
     >
       {text}
     </Typo>
-    <Button size="lg" variant="primary" type="button">
+    <Button size="xl" variant="primary" type="button">
       Try for free
     </Button>
     <ul className="list__scope">

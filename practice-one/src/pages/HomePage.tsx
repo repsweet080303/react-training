@@ -4,6 +4,7 @@ import Hero from '@/components/layouts/Hero';
 import Banner from '@/components/layouts/Banner';
 import Company from '@/components/layouts/Company';
 import PopularCourse from '@/components/layouts/PopularCourse';
+import WatchPlan from '@/components/layouts/WatchPlan';
 
 const HomePage = () => (
   <div className="cover">
@@ -12,6 +13,7 @@ const HomePage = () => (
     <Banner />
     <Company />
     <PopularCourse />
+    <WatchPlan />
   </div>
 );
 

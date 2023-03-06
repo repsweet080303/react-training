@@ -1,5 +1,3 @@
-import React from 'react';
-import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 import { IListItemProps, IListScope } from '@/types/interfaces';
 
 const listNavigation: IListItemProps[] = [
