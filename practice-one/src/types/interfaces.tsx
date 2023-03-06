@@ -126,3 +126,11 @@ export interface IUser {
   name: ReactNode;
   job: ReactNode;
 }
+
+export interface IFeedback {
+  name: string;
+  job: string;
+  comment: string;
+  url: string;
+  alt?: string;
+}
