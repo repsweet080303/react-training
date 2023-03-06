@@ -6,10 +6,10 @@ import Company from '@/components/layouts/Company';
 import PopularCourse from '@/components/layouts/PopularCourse';
 import WatchPlan from '@/components/layouts/WatchPlan';
 import Testimonial from '@/components/layouts/Testimonial';
-import Input from '@/components/common/Form';
+import Newsletter from '@/components/layouts/Newsletters';
 
 const HomePage = () => (
-  <div className='cover'>
+  <div className="cover">
     <Header />
     <Hero />
     <Banner />
@@ -17,9 +17,7 @@ const HomePage = () => (
     <PopularCourse />
     <WatchPlan />
     <Testimonial />
-    <Input placeholder='Your Email' type='email'>
-      Subscribe
-    </Input>
+    <Newsletter />
   </div>
 );
 
