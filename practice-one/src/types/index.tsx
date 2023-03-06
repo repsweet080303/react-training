@@ -42,3 +42,5 @@ export type TypeLabelSize = 'sm' | 'md';
 export type TypeItemIcon = 'advantage' | 'disadvantage';
 
 export type TypeOptionsPlan = 'PAYMENT' | 'FREE';
+
+export type TypeForm = 'button' | 'checkbox' | 'email' | 'password' | 'submit' | 'submit';

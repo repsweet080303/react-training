@@ -10,16 +10,16 @@ export default {
 
 const Template: ComponentStory<typeof Feedback> = ({
   name,
-  comment,
+  children,
   job,
   url,
-}: IFeedback) => <Feedback name={name} job={job} comment={comment} url={url} />;
+}: IFeedback) => <Feedback name={name} job={job} url={url}>{children}</Feedback>;
 
 export const FeedbackUser = Template.bind({});
 FeedbackUser.args = {
   name: 'Regina Miles',
   job: 'Designer',
-  comment:
+  children:
     'Slate helps you see how many more days you need to work to reach your financial goal for the month and year.',
   url: 'src/assets/images/avatar-one.jpg',
 };
