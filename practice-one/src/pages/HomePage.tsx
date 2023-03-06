@@ -5,6 +5,7 @@ import Banner from '@/components/layouts/Banner';
 import Company from '@/components/layouts/Company';
 import PopularCourse from '@/components/layouts/PopularCourse';
 import WatchPlan from '@/components/layouts/WatchPlan';
+import Testimonial from '@/components/layouts/Testimonial';
 
 const HomePage = () => (
   <div className="cover">
@@ -14,6 +15,7 @@ const HomePage = () => (
     <Company />
     <PopularCourse />
     <WatchPlan />
+    <Testimonial />
   </div>
 );
 

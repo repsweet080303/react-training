@@ -130,7 +130,7 @@ export interface IUser {
 export interface IFeedback {
   name: string;
   job: string;
-  comment: string;
+  children: ReactNode;
   url: string;
   alt?: string;
 }

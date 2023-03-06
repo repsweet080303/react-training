@@ -1,0 +1,30 @@
+.testimonial {
+  &__content {
+    height: 134px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    @include desktop {
+      align-items: start;
+    }
+  }
+
+  &__feedback {
+    width: 500px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include tablet {
+      width: 750px;
+    }
+
+    @include desktop {
+      width: 100%;
+    }
+  }
+}
