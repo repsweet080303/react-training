@@ -119,3 +119,10 @@ export interface ICardPlan {
   text: string;
   listScope: IListScope[];
 }
+
+export interface IUser {
+  url: string;
+  alt?: string;
+  name: ReactNode;
+  job: ReactNode;
+}
