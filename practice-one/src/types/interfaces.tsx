@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, ReactElement } from 'react';
 import { FontAwesomeIconProps } from '@fortawesome/react-fontawesome';
 import { IconDefinition } from '@fortawesome/fontawesome-common-types';
 import {
@@ -107,8 +107,15 @@ export interface IScope {
   children: ReactNode;
 }
 
+export interface IListScope {
+  id: number;
+  type: TypeItemIcon;
+  text: string;
+}
+
 export interface ICardPlan {
   options: TypeOptionsPlan;
   description: string;
   text: string;
+  listScope: IListScope[];
 }

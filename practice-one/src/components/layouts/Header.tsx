@@ -8,7 +8,7 @@ import Brand from '@/components/common/Brand';
 import List from '@/components/common/List';
 import Button from '@/components/common/Button';
 import Icon from '@/components/common/Icon';
-import listNavigation from '@/constants';
+import { listNavigation } from '@/constants/index';
 
 const Header = () => {
   const [menu, setMenu] = useState(false);

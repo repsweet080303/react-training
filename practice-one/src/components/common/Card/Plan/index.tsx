@@ -7,7 +7,9 @@ import Price from '@/components/common/Price';
 import Button from '@/components/common/Button';
 import ItemScope from '@/components/common/ItemScope';
 
-const CardPlan = ({ options, description, text }: ICardPlan) => (
+const CardPlan = ({
+  options, description, text, listScope,
+}: ICardPlan) => (
   <div className="card-plan">
     <div className="icon__wrapper">
       <Icon icon={faHeart} additionalClass="icon__heart" />
@@ -42,23 +44,13 @@ const CardPlan = ({ options, description, text }: ICardPlan) => (
     <Button size="lg" variant="primary" type="button">
       Try for free
     </Button>
-    <div className="list__scope">
-      <ItemScope icon={faCircleCheck} typeScope="advantage">
-        Unlimited product updates
-      </ItemScope>
-      <ItemScope icon={faCircleCheck} typeScope="advantage">
-        Unlimited product updates
-      </ItemScope>
-      <ItemScope icon={faCircleCheck} typeScope="advantage">
-        Unlimited product updates
-      </ItemScope>
-      <ItemScope icon={faCircleCheck} typeScope="disadvantage">
-        1GB Cloud storage
-      </ItemScope>
-      <ItemScope icon={faCircleCheck} typeScope="disadvantage">
-        Email and community support
-      </ItemScope>
-    </div>
+    <ul className="list__scope">
+      {listScope.map((item) => (
+        <ItemScope key={item.id} icon={faCircleCheck} typeScope={item.type}>
+          {item.text}
+        </ItemScope>
+      ))}
+    </ul>
   </div>
 );
 
