@@ -1,21 +1,28 @@
-.form-email {
-  width: 60%;
-  height: 45px;
-  padding: 0 20px;
-  border: $form-border;
-  color: $paragraph-color;
-  background-color: $form-color;
-  font: {
-    size: $font-size-xs;
-    family: $font-family-secondary;
+.form {
+  &__email {
+    width: 60%;
+    height: 45px;
+    padding: 0 20px;
+    border: $form-border;
+    color: $paragraph-color;
+    background-color: $form-color;
+    font: {
+      size: $font-size-xs;
+      family: $font-family-secondary;
+    }
+
+    @include tablet {
+      height: 50px;
+    }
+
+    @include desktop {
+      height: 58px;
+      font-size: $font-size-xsm;
+    }
   }
 
-  @include tablet {
-    height: 50px;
-  }
-
-  @include desktop {
-    height: 58px;
-    font-size: $font-size-xsm;
+  &__group {
+    display: flex;
+    justify-content: center;
   }
 }

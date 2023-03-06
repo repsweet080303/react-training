@@ -102,8 +102,12 @@
 
   &__subscribe {
     margin: 0;
-    padding: 21px 25px;
+    padding: 16px 20px;
     border-radius: $btn-border-left-radius;
     font-family: $font-family-quaterdary;
+
+    @include desktop {
+      padding: 21px 25px;
+    }
   }
 }
