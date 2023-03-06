@@ -39,7 +39,7 @@ TagText.args = {
 
 export const HeaderText = Template.bind({});
 HeaderText.args = {
-  sizeTypo: 'xxl',
+  sizeTypo: 'xxxl',
   statusTypo: 'typo__secondary',
   weightTypo: 'typo__bold',
   tagTypo: 'h1',

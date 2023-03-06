@@ -12,4 +12,25 @@
   &--md {
     width: 62px;
   }
+
+  &__circle {
+    border-radius: 52px;
+    padding: 33px 14px;
+    background-color: $label-color;
+    position: absolute;
+    font-size: $font-size-lg;
+    z-index: 1;
+    right: 53px;
+    top: 33.6%;
+
+    @include tablet {
+      right: 0;
+      top: 0;
+    }
+
+    @include desktop {
+      right: 328px;
+      top: -30px;
+    }
+  }
 }

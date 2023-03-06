@@ -19,7 +19,7 @@ const Hero = () => (
         </Typo>
         <Typo
           statusTypo="typo__secondary"
-          sizeTypo="xxl"
+          sizeTypo="xxxl"
           tagTypo="h1"
           weightTypo="typo__bold"
           classTypo="typo__head"

@@ -76,7 +76,6 @@
 
   &--lg {
     padding: 10px 30px;
-    width: 100%;
 
     @include tablet {
       padding: 12px 35px;
@@ -85,6 +84,11 @@
     @include desktop {
       padding: 15px 40px;
     }
+  }
+
+  &--xl {
+    @extend .btn--lg;
+    width: 100%;
   }
 
   &__group {

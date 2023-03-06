@@ -8,7 +8,7 @@ const PopularCourse = () => (
       <div className="popular-course__content">
         <Typo
           statusTypo="typo__primary"
-          sizeTypo="sm"
+          sizeTypo="xs"
           tagTypo="h5"
           weightTypo="typo__bold"
           classTypo="typo__tag"
@@ -26,7 +26,7 @@ const PopularCourse = () => (
         </Typo>
         <Typo
           statusTypo="typo__paragraph"
-          sizeTypo="sm"
+          sizeTypo="xs"
           tagTypo="p"
           weightTypo="typo__regular"
           classTypo="typo__sub--light"
