@@ -7,7 +7,7 @@ import Typo from '@/components/common/Typo';
 import User from '@/components/common/User';
 
 const Feedback = ({
-  name, job, url, comment, alt,
+  name, job, url, children, alt,
 }: IFeedback) => (
   <div className="feedback">
     <div className="feedback__rate">
@@ -24,7 +24,7 @@ const Feedback = ({
       weightTypo="typo__regular"
       additionalTypo="typo__comment"
     >
-      {comment}
+      {children}
     </Typo>
     <User name={name} job={job} url={url} alt={alt} />
   </div>
