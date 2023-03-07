@@ -5,16 +5,15 @@ import { IListItemProps } from '@/types/interfaces';
 const ListItem = ({
   tagName: TagName,
   href,
-  title,
-  image,
+  text,
+  icon,
   additionalClass,
-  img,
   size,
 }: IListItemProps) => (
   <li className="list-item">
-    {image && <Image img={img} additionalClass={additionalClass} size={size} />}
+    {icon && <Image img={icon} additionalClass={additionalClass} size={size} />}
     <TagName className="list-item__link" href={href}>
-      {title}
+      {text}
     </TagName>
   </li>
 );

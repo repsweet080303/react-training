@@ -47,11 +47,12 @@ export interface IListItemProps
   id?: number;
   tagName: TypeItemTag;
   href?: string;
-  title: string;
-  image?: string;
+  text: string;
+  icon?: string;
 }
 
 export interface IListProps {
+  title?: string;
   additionalClass: TypeList;
   listItem: IListItemProps[];
 }
@@ -147,8 +148,8 @@ export interface IInput {
 }
 
 export interface IImage {
-  img: string;
-  additionalClass: string;
+  img?: string;
+  additionalClass?: string;
   alt?: string;
-  size: TypeImageSize;
+  size?: TypeImageSize;
 }
