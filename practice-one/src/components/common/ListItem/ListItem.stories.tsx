@@ -12,7 +12,6 @@ const Template: ComponentStory<typeof ListItem> = ({
   href,
   tagName,
   text,
-  img,
   icon,
   additionalClass,
   size,
@@ -22,7 +21,7 @@ const Template: ComponentStory<typeof ListItem> = ({
     href={href}
     tagName={tagName}
     text={text}
-    img={img}
+    img={icon}
     additionalClass={additionalClass}
     size={size}
   />
@@ -31,7 +30,6 @@ const Template: ComponentStory<typeof ListItem> = ({
 export const HomeItem = Template.bind({});
 HomeItem.args = {
   icon: 'src/assets/icons/phone.svg',
-  img: 'src/assets/icons/phone.svg',
   href: '#',
   tagName: 'a',
   text: 'Home',
