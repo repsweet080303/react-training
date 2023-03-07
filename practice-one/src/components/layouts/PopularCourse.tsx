@@ -3,7 +3,7 @@ import Typo from '../common/Typo';
 import CardProduct from '@/components/common/Card/Product';
 
 const PopularCourse = () => (
-  <div className="popular-course">
+  <section className="popular-course">
     <div className="container--large">
       <div className="popular-course__content">
         <Typo
@@ -77,7 +77,7 @@ const PopularCourse = () => (
         />
       </div>
     </div>
-  </div>
+  </section>
 );
 
 export default PopularCourse;
