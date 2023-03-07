@@ -42,11 +42,13 @@ export interface IconProps extends Omit<FontAwesomeIconProps, 'icon'> {
   onClick?: (e: React.MouseEvent) => void;
 }
 
-export interface IListItemProps {
+export interface IListItemProps
+  extends Pick<IImage, 'img' | 'additionalClass' | 'size'> {
   id?: number;
   tagName: TypeItemTag;
   href?: string;
   title: string;
+  image?: string;
 }
 
 export interface IListProps {
