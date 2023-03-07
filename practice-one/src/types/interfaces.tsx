@@ -43,8 +43,9 @@ export interface IconProps extends Omit<FontAwesomeIconProps, 'icon'> {
 }
 
 export interface IListItemProps
-  extends Pick<IImage, 'img' | 'additionalClass' | 'size'> {
+  extends Pick<IImage, 'img' | 'imageClass' | 'size'> {
   id?: number;
+  itemClass?: string;
   tagName: TypeItemTag;
   href?: string;
   text: string;
@@ -52,8 +53,9 @@ export interface IListItemProps
 }
 
 export interface IListProps {
+  id?: number;
   title?: string;
-  additionalClass: TypeList;
+  additionalClass?: TypeList;
   listItem: IListItemProps[];
 }
 
@@ -149,7 +151,7 @@ export interface IInput {
 
 export interface IImage {
   img?: string;
-  additionalClass?: string;
+  imageClass?: string;
   alt?: string;
   size?: TypeImageSize;
 }

@@ -1,0 +1,16 @@
+.footer {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    margin: 0;
+  }
+}
