@@ -2,6 +2,7 @@ import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import ListItem from '@/components/common/ListItem';
 import { IListItemProps } from '@/types/interfaces';
+import Phone from '@/assets/icons/phone.svg';
 
 export default {
   title: 'PracticeOne/Common/ListItem',
@@ -12,11 +13,34 @@ const Template: ComponentStory<typeof ListItem> = ({
   href,
   tagName,
   title,
-}: IListItemProps) => <ListItem href={href} tagName={tagName} title={title} />;
+  img,
+  image,
+  additionalClass,
+  size,
+}: IListItemProps) => (
+  <ListItem
+    image={image}
+    href={href}
+    tagName={tagName}
+    title={title}
+    img={img}
+    additionalClass={additionalClass}
+    size={size}
+  />
+);
 
-export const Primary = Template.bind({});
-Primary.args = {
+export const HomeItem = Template.bind({});
+HomeItem.args = {
+  image: Phone,
+  img: Phone,
   href: '#',
   tagName: 'a',
   title: 'Home',
+};
+
+export const AboutUs = Template.bind({});
+AboutUs.args = {
+  href: '#',
+  tagName: 'a',
+  title: 'About Us',
 };
