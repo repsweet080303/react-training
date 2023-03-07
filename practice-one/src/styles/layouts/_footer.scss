@@ -13,4 +13,30 @@
   &__item {
     margin: 0;
   }
+
+  &__credit {
+    background-color: $footer-color;
+  }
+
+  &__group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    @include tablet {
+      flex-direction: row;
+    }
+  }
+
+  &__social {
+    width: 112px;
+    display: flex;
+    margin: 20px auto;
+    justify-content: space-between;
+
+    @include tablet {
+      margin: 25px 62px;
+    }
+  }
 }
