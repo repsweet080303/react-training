@@ -13,7 +13,7 @@ const Template: ComponentStory<typeof ListItem> = ({
   tagName,
   text,
   icon,
-  additionalClass,
+  itemClass,
   size,
 }: IListItemProps) => (
   <ListItem
@@ -22,7 +22,7 @@ const Template: ComponentStory<typeof ListItem> = ({
     tagName={tagName}
     text={text}
     img={icon}
-    additionalClass={additionalClass}
+    itemClass={itemClass}
     size={size}
   />
 );

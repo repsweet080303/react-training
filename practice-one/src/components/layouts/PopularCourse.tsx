@@ -1,5 +1,5 @@
 import React from 'react';
-import Typo from '../common/Typo';
+import Typo from '@/components/common/Typo';
 import CardProduct from '@/components/common/Card/Product';
 
 const PopularCourse = () => (
