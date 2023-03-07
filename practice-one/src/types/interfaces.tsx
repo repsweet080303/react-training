@@ -19,6 +19,7 @@ import {
   TypeItemIcon,
   TypeOptionsPlan,
   TypeForm,
+  TypeImageSize,
 } from '@/types';
 
 export interface IBrandProps {
@@ -141,4 +142,11 @@ export interface IInput {
   placeholder: string;
   type: TypeForm;
   children: ReactNode;
+}
+
+export interface IImage {
+  img: string;
+  additionalClass: string;
+  alt?: string;
+  size: TypeImageSize;
 }

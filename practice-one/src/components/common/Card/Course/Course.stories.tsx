@@ -4,7 +4,7 @@ import CardCourse from '@/components/common/Card/Course';
 import { ICardCourse } from '@/types/interfaces';
 
 export default {
-  title: 'PracticeOne/Common/CardCourse',
+  title: 'PracticeOne/Common/Card/Course',
   component: CardCourse,
 } as ComponentMeta<typeof CardCourse>;
 
