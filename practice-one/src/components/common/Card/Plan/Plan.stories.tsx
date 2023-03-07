@@ -1,10 +1,11 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import CardPlan from '@/components/common/Card/Plan';
+import { listItemScope } from '@/constants';
 import { ICardPlan } from '@/types/interfaces';
 
 export default {
-  title: 'PracticeOne/Common/CardPlan',
+  title: 'PracticeOne/Common/Card/Plan',
   component: CardPlan,
 } as ComponentMeta<typeof CardPlan>;
 
@@ -13,7 +14,7 @@ const Template: ComponentStory<typeof CardPlan> = ({
   description,
   text,
 }: ICardPlan) => (
-  <CardPlan options={options} description={description} text={text} />
+  <CardPlan options={options} description={description} text={text} listScope={listItemScope} />
 );
 
 export const CardFree = Template.bind({});

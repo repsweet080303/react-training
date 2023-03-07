@@ -4,7 +4,7 @@ import CardProduct from '@/components/common/Card/Product';
 import { ICardProduct } from '@/types/interfaces';
 
 export default {
-  title: 'PracticeOne/Common/CardProduct',
+  title: 'PracticeOne/Common/Card/Product',
   component: CardProduct,
 } as ComponentMeta<typeof CardProduct>;
 

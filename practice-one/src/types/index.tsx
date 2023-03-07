@@ -44,3 +44,5 @@ export type TypeItemIcon = 'advantage' | 'disadvantage';
 export type TypeOptionsPlan = 'PAYMENT' | 'FREE';
 
 export type TypeForm = 'button' | 'checkbox' | 'email' | 'password' | 'submit' | 'submit';
+
+export type TypeImageSize = 'xs' | 'sm' | 'md' | 'lg';

@@ -2,7 +2,7 @@ import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import List from '@/components/common/List';
 import { IListProps } from '@/types/interfaces';
-import listNavigation from '@/constants';
+import { listNavigation } from '@/constants';
 
 export default {
   title: 'PracticeOne/Common/List',
