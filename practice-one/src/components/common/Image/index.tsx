@@ -4,10 +4,10 @@ import { IImage } from '@/types/interfaces';
 const Image = ({
   img,
   size,
-  additionalClass,
+  imageClass,
   alt,
 }: IImage) => (
-  <div className={`image image__${additionalClass} image__${size}`}>
+  <div className={`image image__${imageClass} image__${size}`}>
     <img src={img} alt={alt} />
   </div>
 );

@@ -7,12 +7,13 @@ const ListItem = ({
   href,
   text,
   icon,
-  additionalClass,
+  itemClass,
+  imageClass,
   size,
 }: IListItemProps) => (
   <li className="list-item">
-    {icon && <Image img={icon} additionalClass={additionalClass} size={size} />}
-    <TagName className="list-item__link" href={href}>
+    {icon && <Image img={icon} size={size} imageClass={imageClass} alt="icon-contact" />}
+    <TagName className={`list-item__link ${itemClass}`} href={href}>
       {text}
     </TagName>
   </li>

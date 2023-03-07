@@ -7,6 +7,7 @@ import PopularCourse from '@/components/layouts/PopularCourse';
 import WatchPlan from '@/components/layouts/WatchPlan';
 import Testimonial from '@/components/layouts/Testimonial';
 import Newsletter from '@/components/layouts/Newsletters';
+import Footer from '@/components/layouts/Footer';
 
 const HomePage = () => (
   <div className="cover">
@@ -18,6 +19,7 @@ const HomePage = () => (
     <WatchPlan />
     <Testimonial />
     <Newsletter />
+    <Footer />
   </div>
 );
 

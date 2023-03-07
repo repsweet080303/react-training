@@ -8,7 +8,7 @@ const List = ({ title, additionalClass, listItem }: IListProps) => (
     {title && (
       <Typo
         sizeTypo="sm"
-        statusTypo="typo__paragraph"
+        statusTypo="typo__secondary"
         weightTypo="typo__bold"
         tagTypo="p"
         additionalTypo="list__title"
@@ -18,8 +18,11 @@ const List = ({ title, additionalClass, listItem }: IListProps) => (
     )}
     {listItem.map((item) => (
       <ListItem
+        itemClass={item.itemClass}
         icon={item.icon}
         key={item.id}
+        size={item.size}
+        imageClass={item.imageClass}
         tagName={item.tagName}
         href={item.href}
         text={item.text}

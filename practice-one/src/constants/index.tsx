@@ -55,31 +55,36 @@ const listItemScope: IListScope[] = [
   },
 ];
 
-const listAboutUs: IListProps[] = [
+const listFooter: IListProps[] = [
   {
-    additionalClass: 'list--column',
+    id: 1,
     title: 'Company Info',
+    additionalClass: 'list__footer',
     listItem: [
       {
         id: 1,
+        itemClass: 'footer__item',
         tagName: 'a',
         text: 'About Us',
         href: '#',
       },
       {
         id: 2,
+        itemClass: 'footer__item',
         tagName: 'a',
         text: 'Carrier',
         href: '#',
       },
       {
         id: 3,
+        itemClass: 'footer__item',
         tagName: 'a',
         text: 'We are hiring',
         href: '#',
       },
       {
         id: 4,
+        itemClass: 'footer__item',
         tagName: 'a',
         text: 'Blog',
         href: '#',
@@ -87,29 +92,34 @@ const listAboutUs: IListProps[] = [
     ],
   },
   {
-    additionalClass: 'list--column',
+    id: 2,
     title: 'Legal',
+    additionalClass: 'list__footer',
     listItem: [
       {
         id: 1,
+        itemClass: 'footer__item',
         tagName: 'a',
         text: 'About Us',
         href: '#',
       },
       {
         id: 2,
+        itemClass: 'footer__item',
         tagName: 'a',
         text: 'Carrier',
         href: '#',
       },
       {
         id: 3,
+        itemClass: 'footer__item',
         tagName: 'a',
         text: 'We are hiring',
         href: '#',
       },
       {
         id: 4,
+        itemClass: 'footer__item',
         tagName: 'a',
         text: 'Blog',
         href: '#',
@@ -117,17 +127,20 @@ const listAboutUs: IListProps[] = [
     ],
   },
   {
-    additionalClass: 'list--column',
+    id: 3,
     title: 'Features',
+    additionalClass: 'list__footer',
     listItem: [
       {
         id: 1,
+        itemClass: 'footer__item',
         tagName: 'a',
         text: 'Business Marketing',
         href: '#',
       },
       {
         id: 2,
+        itemClass: 'footer__item',
         tagName: 'a',
         text: 'User Analytic',
         href: '#',
@@ -135,23 +148,27 @@ const listAboutUs: IListProps[] = [
       {
         id: 3,
         tagName: 'a',
+        itemClass: 'footer__item',
         text: 'Live Chat',
         href: '#',
       },
       {
         id: 4,
         tagName: 'a',
+        itemClass: 'footer__item',
         text: 'Unlimited Support',
         href: '#',
       },
     ],
   },
   {
-    additionalClass: 'list--column',
+    id: 4,
     title: 'Resources',
+    additionalClass: 'list__footer',
     listItem: [
       {
         id: 1,
+        itemClass: 'footer__item',
         tagName: 'a',
         text: 'IOS & Android',
         href: '#',
@@ -159,17 +176,20 @@ const listAboutUs: IListProps[] = [
       {
         id: 2,
         tagName: 'a',
+        itemClass: 'footer__item',
         text: 'Watch a Demo',
         href: '#',
       },
       {
         id: 3,
         tagName: 'a',
+        itemClass: 'footer__item',
         text: 'Customers',
         href: '#',
       },
       {
         id: 4,
+        itemClass: 'footer__item',
         tagName: 'a',
         text: 'API',
         href: '#',
@@ -177,11 +197,14 @@ const listAboutUs: IListProps[] = [
     ],
   },
   {
-    additionalClass: 'list--column',
+    id: 5,
     title: 'Get In Touch',
+    additionalClass: 'list__footer',
     listItem: [
       {
         icon: 'src/assets/icons/phone.svg',
+        size: 'md',
+        itemClass: 'footer__item',
         id: 1,
         tagName: 'a',
         text: '(480) 555-0103',
@@ -189,19 +212,24 @@ const listAboutUs: IListProps[] = [
       },
       {
         icon: 'src/assets/icons/location.svg',
+        size: 'md',
+        itemClass: 'footer__item',
+        imageClass: 'footer__adress',
         id: 2,
         tagName: 'a',
-        text: 'Watch a Demo',
+        text: '4517 Washington Ave. Manchester, Kentucky 39495',
         href: '#',
       },
       {
         icon: 'src/assets/icons/mail-box.svg',
+        size: 'md',
+        itemClass: 'footer__item',
         id: 3,
         tagName: 'a',
-        text: 'Customers',
+        text: 'debra.holt@example.com',
         href: 'mailto:debra.holt@example.com',
       },
     ],
   },
 ];
-export { listNavigation, listItemScope, listAboutUs };
+export { listNavigation, listItemScope, listFooter };

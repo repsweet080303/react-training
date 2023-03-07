@@ -39,6 +39,7 @@ const Testimonial = () => (
         <Feedback
           name="Regina Miles"
           job="Designer"
+          alt="user one"
           url="src/assets/images/avatar-one.jpg"
         >
           Slate helps you see how many more days you need to work to reach your
@@ -47,6 +48,7 @@ const Testimonial = () => (
         <Feedback
           name="Regina Miles"
           job="Designer"
+          alt="user two"
           url="src/assets/images/avatar-two.jpg"
         >
           Slate helps you see how many more days you need to work to reach your
@@ -55,6 +57,7 @@ const Testimonial = () => (
         <Feedback
           name="Regina Miles"
           job="Designer"
+          alt="user three"
           url="src/assets/images/avatar-three.png"
         >
           Slate helps you see how many more days you need to work to reach your
