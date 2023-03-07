@@ -13,30 +13,30 @@ export default {
 
 const Template: ComponentStory<typeof Image> = ({
   img,
-  additionalClass,
+  imageClass,
   size,
   alt,
 }: IImage) => (
-  <Image img={img} additionalClass={additionalClass} size={size} alt={alt} />
+  <Image img={img} imageClass={imageClass} size={size} alt={alt} />
 );
 
 export const PhoneImage = Template.bind({});
 PhoneImage.args = {
   img: Phone,
-  additionalClass: 'phone',
+  imageClass: 'phone',
   size: 'md',
 };
 
 export const MailImage = Template.bind({});
 MailImage.args = {
   img: MailBox,
-  additionalClass: 'mailbox',
+  imageClass: 'mailbox',
   size: 'md',
 };
 
 export const LocationImage = Template.bind({});
 LocationImage.args = {
   img: Location,
-  additionalClass: 'location',
+  imageClass: 'location',
   size: 'md',
 };
