@@ -89,12 +89,12 @@
   &:hover {
     &__wrapper {
       padding: 37px 43px;
+      height: 310px;
 
       @include desktop {
         padding: 35px 60px 30px 40px;
       }
     }
-    height: 310px;
   }
 
   &__description {
