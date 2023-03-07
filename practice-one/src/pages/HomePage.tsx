@@ -12,13 +12,15 @@ import Footer from '@/components/layouts/Footer';
 const HomePage = () => (
   <div className="cover">
     <Header />
-    <Hero />
-    <Banner />
-    <Company />
-    <PopularCourse />
-    <WatchPlan />
-    <Testimonial />
-    <Newsletter />
+    <main>
+      <Hero />
+      <Banner />
+      <Company />
+      <PopularCourse />
+      <WatchPlan />
+      <Testimonial />
+      <Newsletter />
+    </main>
     <Footer />
   </div>
 );
