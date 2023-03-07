@@ -21,7 +21,7 @@
       margin: 0 0 0 80px;
     }
   }
-  
+
   &__scope {
     height: 236px;
     justify-content: space-between;
@@ -46,7 +46,7 @@
     width: 120px;
 
     @include tablet {
-      width: 145px
+      width: 145px;
     }
   }
 }
