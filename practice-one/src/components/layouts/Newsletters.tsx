@@ -5,7 +5,7 @@ import Form from '@/components/common/Form';
 const Newsletter = () => (
   <section className="newsletter">
     <div className="container--large">
-      <div className="newsletter__content">
+      <div className="newsletter__content d-flex-content">
         <Typo
           additionalTypo="newsletter__text"
           statusTypo="typo__primary"

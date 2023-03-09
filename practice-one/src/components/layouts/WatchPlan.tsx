@@ -7,7 +7,7 @@ import { listItemScope } from '@/constants';
 const WatchPlan = () => (
   <section className="watch-plan">
     <div className="container--large">
-      <div className="watch-plan__content">
+      <div className="watch-plan__content d-flex-content">
         <Typo
           statusTypo="typo__primary"
           sizeTypo="xs"

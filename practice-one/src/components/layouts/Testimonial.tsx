@@ -5,7 +5,7 @@ import Typo from '@/components/common/Typo';
 const Testimonial = () => (
   <section className="testimonial">
     <div className="container--large">
-      <div className="testimonial__content">
+      <div className="testimonial__content d-flex-content">
         <Typo
           statusTypo="typo__primary"
           sizeTypo="xs"

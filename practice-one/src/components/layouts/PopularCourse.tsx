@@ -5,7 +5,7 @@ import CardProduct from '@/components/common/Card/Product';
 const PopularCourse = () => (
   <section className="popular-course">
     <div className="container--large">
-      <div className="popular-course__content">
+      <div className="popular-course__content d-flex-content">
         <Typo
           statusTypo="typo__primary"
           sizeTypo="xs"

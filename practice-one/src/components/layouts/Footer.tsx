@@ -8,7 +8,7 @@ const Footer = () => (
   <footer>
     <div className="footer">
       <div className="container">
-        <div className="footer__list">
+        <div className="footer__list d-flex-column-mobile">
           {listFooter.map((item) => (
             <List
               key={item.id}
@@ -21,7 +21,7 @@ const Footer = () => (
       </div>
       <div className="footer__credit">
         <div className="container">
-          <div className="footer__group">
+          <div className="footer__group d-flex-column-mobile">
             <Typo
               sizeTypo="xs"
               statusTypo="typo__paragraph"
