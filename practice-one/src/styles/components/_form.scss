@@ -1,8 +1,6 @@
 .form {
   &__email {
     width: 60%;
-    height: 45px;
-    padding: 0 20px;
     border: $form-border;
     color: $paragraph-color;
     background-color: $form-color;
@@ -17,7 +15,7 @@
     }
 
     @include desktop {
-      height: 58px;
+      padding: 4px 20px;
       font-size: $font-size-xsm;
     }
   }

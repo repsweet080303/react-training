@@ -3,21 +3,20 @@
   color: #fff;
   text-align: center;
   border-radius: 3px;
-  padding: 4px;
 
   &--sm {
-    width: 52px;
+    padding: 4px 10px;
   }
 
   &--md {
-    width: 62px;
+    padding: 6px 14px;
   }
 
   &__circle {
-    border-radius: 52px;
-    padding: 33px 14px;
-    background-color: $label-color;
     position: absolute;
+    border-radius: 52px;
+    padding: 33px 17px;
+    background-color: $label-color;
     font-size: $font-size-lg;
     z-index: 1;
     right: 53px;

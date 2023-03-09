@@ -1,5 +1,5 @@
 .navigation {
-  height: 60px;
+  padding: 15px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -20,11 +20,11 @@
   }
 
   @include tablet {
-    height: 85px;
+    padding: 13px 0;
     justify-content: space-around;
   }
 
   @include desktop {
-    height: 91px;
+    padding: 20px 0;
   }
 }
