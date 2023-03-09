@@ -7,7 +7,7 @@
     color: $paragraph-color;
     font: {
       family: $font-family-tertiary;
-      size: $font-size-xsm;
+      size: $font-size-xs;
     }
 
     &:hover {
@@ -20,6 +20,7 @@
     }
 
     @include desktop {
+      size: $font-size-xsm;
       margin-left: 21px;
     }
   }

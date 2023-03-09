@@ -31,7 +31,9 @@ const Testimonial = () => (
           weightTypo="typo__regular"
           classTypo="typo__desc"
         >
-          Problems trying to resolve the conflict between the two major realms
+          Problems trying to resolve the conflict between
+          <br />
+          the two major realms
           of Classical physics: Newtonian mechanics
         </Typo>
       </div>

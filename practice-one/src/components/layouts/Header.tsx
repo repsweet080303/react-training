@@ -16,7 +16,7 @@ const Header = () => {
 
   return (
     <header className="header__wrapper">
-      <div className="container">
+      <div className="container--small">
         <nav className="navigation ">
           <Brand title="Brandname" />
           <div className="navigation__mobile">

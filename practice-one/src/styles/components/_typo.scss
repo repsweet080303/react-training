@@ -113,7 +113,11 @@
   }
 
   &__xs {
-    font-size: $font-size-xsm;
+    font-size: $font-size-xs;
+
+    @include desktop {
+      font-size: $font-size-xsm;
+    }
   }
 
   &__sm {

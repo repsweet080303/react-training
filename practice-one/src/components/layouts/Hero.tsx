@@ -5,7 +5,7 @@ import CardCourse from '@/components/common/Card/Course';
 
 const Hero = () => (
   <section className="hero">
-    <div className="container">
+    <div className="container--small">
       <div className="hero__children" />
       <div className="hero__content">
         <Typo
