@@ -13,36 +13,28 @@
   }
 
   &__sub {
-    width: 280px;
-    text-align: center;
+    @extend .typo__head;
+    width: 278px;
     margin: 0 auto;
 
     @include desktop {
       margin: 0;
-      text-align: start;
     }
 
     &--light {
+      @extend .typo__sub;
       width: 463px;
-      text-align: center;
-      margin: 0 auto;
+    }
 
-      @include desktop {
-        margin: 0;
-        text-align: start;
-      }
+    &--large {
+      @extend .typo__sub;
+      width: 335px;
     }
   }
 
   &__feature {
     width: 221px;
-    text-align: center;
-    margin: 0 auto;
-
-    @include desktop {
-      margin: 0;
-      text-align: start;
-    }
+    @extend .typo__sub;
 
     &--start {
       text-align: start;
@@ -122,10 +114,6 @@
 
   &__sm {
     font-size: $font-size-xsm;
-
-    @include tablet {
-      font-size: $font-size-sm;
-    }
   }
 
   &__md {
@@ -171,5 +159,13 @@
   &__comment {
     padding: 15px 60px 30px 60px;
     text-align: center;
+  }
+
+  &__line-height {
+    line-height: 2 ;
+  }
+
+  &__price {
+    padding-bottom: 6px;
   }
 }

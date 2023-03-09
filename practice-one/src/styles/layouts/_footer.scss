@@ -1,17 +1,19 @@
 .footer {
   &__list {
-    display: flex;
-    flex-direction: column;
     align-items: center;
 
     @include tablet {
-      flex-direction: row;
       justify-content: space-between;
     }
   }
 
   &__item {
     margin: 0;
+    font-size: $font-size-xs;
+
+    @include desktop {
+      font-size: $font-size-xsm;
+    }
   }
 
   &__credit {
@@ -19,14 +21,8 @@
   }
 
   &__group {
-    display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: column;
-
-    @include tablet {
-      flex-direction: row;
-    }
   }
 
   &__social {

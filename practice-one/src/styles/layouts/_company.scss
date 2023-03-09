@@ -27,4 +27,8 @@
       }
     }
   }
+
+  @include desktop {
+    padding: 80px 0;
+  }
 }
