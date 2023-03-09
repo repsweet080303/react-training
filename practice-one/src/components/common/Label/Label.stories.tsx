@@ -23,6 +23,6 @@ LabelSmall.args = {
 
 export const LabelMedium = Template.bind({});
 LabelMedium.args = {
+  ...LabelSmall.args,
   size: 'md',
-  title: 'Sale',
 };

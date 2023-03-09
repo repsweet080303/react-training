@@ -19,9 +19,14 @@ UserMiles.args = {
   job: 'Designer',
 };
 
+export const UserLmonid = Template.bind({});
+UserLmonid.args = {
+  ...UserMiles.args,
+  url: 'src/assets/images/avatar-two.jpg',
+};
+
 export const UserTom = Template.bind({});
 UserTom.args = {
-  name: 'Regina Miles',
-  url: 'src/assets/images/avatar-two.jpg',
-  job: 'Designer',
+  ...UserMiles.args,
+  url: 'src/assets/images/avatar-three.png',
 };
