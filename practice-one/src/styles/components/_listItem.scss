@@ -7,7 +7,7 @@
     color: $paragraph-color;
     font: {
       family: $font-family-tertiary;
-      size: $font-size-xs;
+      size: $font-size-xsm;
     }
 
     &:hover {
@@ -15,12 +15,10 @@
     }
 
     @include tablet {
-      padding: 0;
       margin-left: 25px;
     }
 
     @include desktop {
-      size: $font-size-xsm;
       margin-left: 21px;
     }
   }

@@ -28,6 +28,7 @@ const CardPlan = ({
       tagTypo="h6"
       weightTypo="typo__bold"
       classTypo="typo__text"
+      additionalTypo="typo__line-height"
     >
       {description}
     </Typo>

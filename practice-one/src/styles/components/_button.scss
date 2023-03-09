@@ -21,8 +21,8 @@
   &__tertiary {
     margin: 0 auto;
     color: $color-primary;
-    background-color: transparent;
     border: none;
+    background-color: transparent;
 
     &:hover {
       opacity: 0.8;
@@ -104,9 +104,13 @@
 
   &__subscribe {
     margin: 0;
-    padding: 16px 20px;
+    padding: 16px 7px;
     border-radius: $btn-border-left-radius;
     font-family: $font-family-quaterdary;
+
+    @include tablet {
+      padding: 16px 20px;
+    }
 
     @include desktop {
       padding: 21px 25px;

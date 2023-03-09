@@ -18,6 +18,7 @@ export type ClassTypo =
   | 'typo__head'
   | 'typo__sub'
   | 'typo__sub--light'
+  | 'typo__sub--large'
   | 'typo__text'
   | 'typo__desc'
   | 'typo__feature'
