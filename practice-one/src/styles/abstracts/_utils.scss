@@ -18,6 +18,14 @@
     max-width: 1050px;
   }
 
+  &--small {
+    @extend .container;
+
+    @include desktop {
+      padding: 0;
+    }
+  }
+
   &--large {
     @extend .container;
     margin: 0 auto;

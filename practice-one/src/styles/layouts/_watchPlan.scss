@@ -6,8 +6,10 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
 
     @include desktop {
+      text-align: start;
       align-items: start;
     }
   }
