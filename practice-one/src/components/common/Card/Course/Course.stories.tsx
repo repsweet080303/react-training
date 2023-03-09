@@ -26,16 +26,14 @@ CardExpert.args = {
 
 export const CardTraining = Template.bind({});
 CardTraining.args = {
+  ...CardExpert.args,
   modify: 'training',
   title: 'Training Courses',
-  description:
-    'The gradual accumulation of information about atomic and small-scale behaviour...',
 };
 
 export const CardLifetime = Template.bind({});
 CardLifetime.args = {
+  ...CardExpert.args,
   modify: 'life',
   title: 'Lifetime access',
-  description:
-    'The gradual accumulation of information about atomic and small-scale behaviour...',
 };

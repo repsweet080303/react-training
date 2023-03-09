@@ -48,28 +48,18 @@ TrainingProduct.args = {
 
 export const BooksProduct = Template.bind({});
 BooksProduct.args = {
+  ...TrainingProduct.args,
   imageHeader: 'src/assets/images/pencil-cover.png',
-  tag: 'Training Courses',
+  tag: 'Books Liberary',
   alt: 'pencil cover',
-  title: 'book Library',
-  description:
-    "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
-  downloaded: 15,
-  vote: 4.5,
-  newPrice: 16.48,
-  oldPrice: 6.48,
+  title: 'Every Client Matters',
 };
 
 export const CetifiedProduct = Template.bind({});
 CetifiedProduct.args = {
+  ...TrainingProduct.args,
   imageHeader: 'src/assets/images/color-pencil-cover.png',
-  tag: 'Get Quality Education',
+  tag: 'Certified Teacher',
   alt: 'pencil color cover',
-  title: 'book Library',
-  description:
-    "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
-  downloaded: 15,
-  vote: 4.5,
-  newPrice: 16.48,
-  oldPrice: 6.48,
+  title: 'Get Quality Education',
 };

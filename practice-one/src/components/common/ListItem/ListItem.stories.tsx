@@ -37,7 +37,7 @@ HomeItem.args = {
 
 export const AboutUs = Template.bind({});
 AboutUs.args = {
-  href: '#',
-  tagName: 'a',
+  ...HomeItem.args,
+  icon: '',
   text: 'About Us',
 };
