@@ -7,7 +7,7 @@ const Hero = () => (
   <section className="hero">
     <div className="container--small">
       <div className="hero__children" />
-      <div className="hero__content">
+      <div className="hero__content d-flex-content">
         <Typo
           statusTypo="typo__primary"
           sizeTypo="sm"
@@ -31,7 +31,7 @@ const Hero = () => (
           sizeTypo="md"
           tagTypo="h4"
           weightTypo="typo__regular"
-          classTypo="typo__sub"
+          classTypo="typo__sub--large"
         >
           Every day brings with it a fresh set of learning possibilities.
         </Typo>

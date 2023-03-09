@@ -8,9 +8,9 @@ import Straight from '@/components/common/Straight';
 const Banner = () => (
   <section className="banner">
     <div className="container">
-      <div className="banner__wrapper">
+      <div className="banner__wrapper d-flex-content">
         <div className="banner__girl-children" />
-        <div className="banner__content">
+        <div className="banner__content d-flex-content">
           <Straight additionalClass="straight__long" />
           <Typo
             statusTypo="typo__secondary"
@@ -26,7 +26,7 @@ const Banner = () => (
             sizeTypo="xs"
             tagTypo="p"
             weightTypo="typo__regular"
-            classTypo="typo__sub"
+            classTypo="typo__sub--large"
           >
             Problems trying to resolve the conflict between the two major realms
             of Classical physics: Newtonian mechanics

@@ -17,17 +17,12 @@
   }
 
   &__wrapper {
-    display: flex;
-    flex-direction: column;
-
     @include desktop {
       flex-direction: row;
     }
   }
 
   &__content {
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
     margin: 0 auto;
     height: 300px;
