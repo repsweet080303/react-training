@@ -8,6 +8,7 @@ import { faHeart, faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 import Icon from '@/components/common/Icon';
 import Typo from '@/components/common/Typo';
 import Price from '@/components/common/Price';
+import Label from '@/components/common/Label';
 import Button from '@/components/common/Button';
 import ItemScope from '@/components/common/ItemScope';
 
@@ -15,9 +16,10 @@ import ItemScope from '@/components/common/ItemScope';
 import { ICardPlan } from '@/types/interfaces';
 
 const CardPlan = ({
-  options, description, text, listScope,
+  options, description, text, listScope, isLabel,
 }: ICardPlan) => (
   <div className="card-plan">
+    {isLabel && <Label title="New" size="md" additionalClass="label__circle" />}
     <div className="icon__wrapper">
       <Icon icon={faHeart} additionalClass="icon__heart" />
     </div>
