@@ -163,9 +163,11 @@ export interface IUser {
 
 // Interface feedback
 export interface IFeedback {
+  id?: number;
   name: string;
   job: string;
-  children: ReactNode;
+  comment?: string;
+  children?: ReactNode,
   url: string;
   alt?: string;
 }

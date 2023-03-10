@@ -5,6 +5,7 @@ import {
   ICardCourse,
   ICardProduct,
   ICardPlan,
+  IFeedback,
 } from '@/types/interfaces';
 
 const listNavigation: IListItemProps[] = [
@@ -329,6 +330,37 @@ const listCardPlan: ICardPlan[] = [
     text: 'Slate helps you see how many more days you need...',
   },
 ];
+
+const listFeedback: IFeedback[] = [
+  {
+    id: 1,
+    comment:
+      'Slate helps you see how many more days you need to work to reach your financial goal for the month and year.',
+    name: 'Regina Miles',
+    job: 'Designer',
+    alt: 'user one',
+    url: 'src/assets/images/avatar-one.jpg',
+  },
+  {
+    id: 2,
+    comment:
+      'Slate helps you see how many more days you need to work to reach your financial goal for the month and year.',
+    name: 'Regina Miles',
+    job: 'Designer',
+    alt: 'user two',
+    url: 'src/assets/images/avatar-two.jpg',
+  },
+  {
+    id: 3,
+    comment:
+      'Slate helps you see how many more days you need to work to reach your financial goal for the month and year.',
+    name: 'Regina Miles',
+    job: 'Designer',
+    alt: 'user three',
+    url: 'src/assets/images/avatar-three.png',
+  },
+];
+
 export {
   listNavigation,
   listItemScope,
@@ -336,4 +368,5 @@ export {
   listCardCourse,
   listCardProduct,
   listCardPlan,
+  listFeedback,
 };

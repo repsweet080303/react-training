@@ -4,7 +4,6 @@ import React from 'react';
 // Components
 import Typo from '@/components/common/Typo';
 import CardPlan from '@/components/common/Card/Plan';
-import Label from '@/components/common/Label';
 
 // Constant
 import { listItemScope, listCardPlan } from '@/constants';
