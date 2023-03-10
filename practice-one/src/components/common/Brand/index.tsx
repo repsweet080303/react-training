@@ -1,5 +1,10 @@
+// React
 import React from 'react';
+
+// Style
 import '../../../styles/main.scss';
+
+// Interface
 import { IBrandProps } from '@/types/interfaces';
 
 const Brand = ({ href = '#', title }: IBrandProps) => (

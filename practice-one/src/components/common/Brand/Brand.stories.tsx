@@ -1,6 +1,13 @@
+// React
 import React from 'react';
+
+// Storybook
 import { ComponentStory, ComponentMeta } from '@storybook/react';
+
+// Component
 import Brand from '@/components/common/Brand';
+
+// Interface
 import { IBrandProps } from '@/types/interfaces';
 
 export default {
