@@ -1,8 +1,13 @@
+// React
 import React from 'react';
+
+// Components
 import List from '@/components/common/List';
-import { listFooter } from '@/constants';
 import Typo from '@/components/common/Typo';
 import Image from '@/components/common/Image';
+
+// Constant
+import { listFooter } from '@/constants';
 
 const Footer = () => (
   <footer>

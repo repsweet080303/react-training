@@ -1,13 +1,20 @@
+// React and Hook
 import React, { useState } from 'react';
+
+// Icons solid fontawesome
 import {
   faArrowRight,
   faBars,
   faBarsStaggered,
 } from '@fortawesome/free-solid-svg-icons';
+
+// Components
 import Brand from '@/components/common/Brand';
 import List from '@/components/common/List';
 import Button from '@/components/common/Button';
 import Icon from '@/components/common/Icon';
+
+// Constant
 import { listNavigation } from '@/constants/index';
 
 const Header = () => {
