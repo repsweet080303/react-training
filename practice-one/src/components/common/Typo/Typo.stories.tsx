@@ -1,6 +1,13 @@
+// React
 import React from 'react';
+
+// Storybook
 import { ComponentStory, ComponentMeta } from '@storybook/react';
+
+// Component
 import Typo from '@/components/common/Typo';
+
+// Interface
 import { ITypoProps } from '@/types/interfaces';
 
 export default {

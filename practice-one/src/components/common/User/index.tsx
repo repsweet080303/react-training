@@ -1,6 +1,11 @@
+// React
 import React from 'react';
-import { IUser } from '@/types/interfaces';
+
+// Component
 import Typo from '@/components/common/Typo';
+
+// Interface
+import { IUser } from '@/types/interfaces';
 
 const User = ({
   url,

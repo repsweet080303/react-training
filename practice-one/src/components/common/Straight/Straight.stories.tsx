@@ -1,6 +1,13 @@
+// React
 import React from 'react';
+
+// Storybook
 import { ComponentMeta, ComponentStory } from '@storybook/react';
+
+// Component
 import Straight from '@/components/common/Straight';
+
+// Interface
 import { IStraightProps } from '@/types/interfaces';
 
 export default {
