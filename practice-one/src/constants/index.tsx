@@ -4,6 +4,7 @@ import {
   IListProps,
   ICardCourse,
   ICardProduct,
+  ICardPlan,
 } from '@/types/interfaces';
 
 const listNavigation: IListItemProps[] = [
@@ -304,10 +305,35 @@ const listCardProduct: ICardProduct[] = [
     oldPrice: 16.48,
   },
 ];
+
+const listCardPlan: ICardPlan[] = [
+  {
+    id: 1,
+    isLabel: false,
+    options: 'FREE',
+    description: 'Organize across all apps by hand',
+    text: 'Slate helps you see how many more days you need...',
+  },
+  {
+    id: 2,
+    isLabel: true,
+    options: 'FREE',
+    description: 'Organize across all apps by hand',
+    text: 'Slate helps you see how many more days you need...',
+  },
+  {
+    id: 2,
+    isLabel: false,
+    options: 'FREE',
+    description: 'Organize across all apps by hand',
+    text: 'Slate helps you see how many more days you need...',
+  },
+];
 export {
   listNavigation,
   listItemScope,
   listFooter,
   listCardCourse,
   listCardProduct,
+  listCardPlan,
 };

@@ -125,11 +125,12 @@ export interface ICardProduct {
 
 // Interface card plan
 export interface ICardPlan {
+  id?: number;
   isLabel?: boolean;
   options: TOptionsPlan;
   description: string;
   text: string;
-  listScope: IListScope[];
+  listScope?: IListScope[];
 }
 
 // Interface price
