@@ -5,6 +5,9 @@ import React from 'react';
 import Typo from '@/components/common/Typo';
 import CardProduct from '@/components/common/Card/Product';
 
+// Constant
+import { listCardProduct } from '@/constants';
+
 const PopularCourse = () => (
   <section className="popular-course">
     <div className="container--large">
@@ -34,50 +37,25 @@ const PopularCourse = () => (
           weightTypo="typo__regular"
           classTypo="typo__sub--light"
         >
-          Problems trying to resolve the conflict between
-          the two major realms of Classical physics: Newtonian mechanics
+          Problems trying to resolve the conflict between the two major realms
+          of Classical physics: Newtonian mechanics
         </Typo>
       </div>
       <div className="popular-course__card">
-        <CardProduct
-          imageHeader="src/assets/images/keyboard-cover.png"
-          alt="keyboard cover"
-          tag="Training Courses"
-          title="Video in Live Action"
-          description="We focus on ergonomics and meeting
-                     you where you work. It's only a
-                     keystroke away."
-          vote={4.5}
-          downloaded={15}
-          newPrice={6.48}
-          oldPrice={16.48}
-        />
-        <CardProduct
-          imageHeader="src/assets/images/pencil-cover.png"
-          alt="pencil cover"
-          tag="Books Liberary"
-          title="Every Client Matters"
-          description="We focus on ergonomics and meeting
-                     you where you work. It's only a
-                     keystroke away."
-          vote={4.5}
-          downloaded={15}
-          newPrice={6.48}
-          oldPrice={16.48}
-        />
-        <CardProduct
-          imageHeader="src/assets/images/color-pencil-cover.png"
-          alt="pencil color cover"
-          tag="Certified Teacher"
-          title="Get Quality Education"
-          description="We focus on ergonomics and meeting
-                     you where you work. It's only a
-                     keystroke away."
-          vote={4.5}
-          downloaded={15}
-          newPrice={6.48}
-          oldPrice={16.48}
-        />
+        {listCardProduct.map((product) => (
+          <CardProduct
+            key={product.id}
+            imageHeader={product.imageHeader}
+            alt={product.alt}
+            tag={product.tag}
+            title={product.title}
+            description={product.description}
+            vote={product.vote}
+            downloaded={product.downloaded}
+            newPrice={product.newPrice}
+            oldPrice={product.oldPrice}
+          />
+        ))}
       </div>
     </div>
   </section>

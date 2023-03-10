@@ -3,6 +3,7 @@ import {
   IListScope,
   IListProps,
   ICardCourse,
+  ICardProduct,
 } from '@/types/interfaces';
 
 const listNavigation: IListItemProps[] = [
@@ -261,9 +262,52 @@ const listCardCourse: ICardCourse[] = [
       'The gradual accumulation of information about atomic and small-scale behaviour...',
   },
 ];
+
+const listCardProduct: ICardProduct[] = [
+  {
+    id: 1,
+    imageHeader: 'src/assets/images/keyboard-cover.png',
+    alt: 'keyboard cover',
+    tag: 'Training Courses',
+    title: 'Video in Live Action',
+    description:
+      "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
+    vote: 4.5,
+    downloaded: 15,
+    newPrice: 6.48,
+    oldPrice: 16.48,
+  },
+  {
+    id: 2,
+    imageHeader: 'src/assets/images/pencil-cover.png',
+    alt: 'pencil cover',
+    tag: 'Books Liberary',
+    title: 'Every Client Matters',
+    description:
+      "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
+    vote: 4.5,
+    downloaded: 15,
+    newPrice: 6.48,
+    oldPrice: 16.48,
+  },
+  {
+    id: 3,
+    imageHeader: 'src/assets/images/color-pencil-cover.png',
+    alt: 'pencil color cover',
+    tag: 'Certified Teacher',
+    title: 'Get Quality Education',
+    description:
+      "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
+    vote: 4.5,
+    downloaded: 15,
+    newPrice: 6.48,
+    oldPrice: 16.48,
+  },
+];
 export {
   listNavigation,
   listItemScope,
   listFooter,
   listCardCourse,
+  listCardProduct,
 };

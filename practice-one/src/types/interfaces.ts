@@ -111,6 +111,7 @@ export interface ICardCourse {
 
 // Interface card product
 export interface ICardProduct {
+  id?: number;
   imageHeader: string;
   alt: string;
   tag: string;
