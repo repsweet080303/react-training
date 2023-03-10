@@ -125,6 +125,7 @@ export interface ICardProduct {
 
 // Interface card plan
 export interface ICardPlan {
+  isLabel?: boolean;
   options: TOptionsPlan;
   description: string;
   text: string;
