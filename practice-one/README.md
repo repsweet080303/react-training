@@ -67,17 +67,17 @@
 
 ## How to run practice
 
-> pnpm install ( yarn install )
+  > pnpm install ( yarn install )
 
 ### Run project
 
-> pnpm start ( yarn start )
+  > pnpm start ( yarn start )
 
 follow at:  http://127.0.0.1:5173/
 
 ### Run storybook
 
-> pnpm storybook ( yarn storybook )
+  > pnpm storybook ( yarn storybook )
 
 follow at:   http://localhost:6006/  
 
