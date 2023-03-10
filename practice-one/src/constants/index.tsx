@@ -1,4 +1,9 @@
-import { IListItemProps, IListScope, IListProps } from '@/types/interfaces';
+import {
+  IListItemProps,
+  IListScope,
+  IListProps,
+  ICardCourse,
+} from '@/types/interfaces';
 
 const listNavigation: IListItemProps[] = [
   {
@@ -232,4 +237,33 @@ const listFooter: IListProps[] = [
     ],
   },
 ];
-export { listNavigation, listItemScope, listFooter };
+
+const listCardCourse: ICardCourse[] = [
+  {
+    id: 1,
+    modify: 'expert',
+    title: 'Expert Instruction',
+    description:
+      'The gradual accumulation of information about atomic and small-scale behaviour...',
+  },
+  {
+    id: 2,
+    modify: 'training',
+    title: 'Training Courses',
+    description:
+      'The gradual accumulation of information about atomic and small-scale behaviour...',
+  },
+  {
+    id: 3,
+    modify: 'life',
+    title: 'Lifetime access',
+    description:
+      'The gradual accumulation of information about atomic and small-scale behaviour...',
+  },
+];
+export {
+  listNavigation,
+  listItemScope,
+  listFooter,
+  listCardCourse,
+};

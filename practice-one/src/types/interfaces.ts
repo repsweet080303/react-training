@@ -25,6 +25,7 @@ import {
   TOptionsPlan,
   TForm,
   TImageSize,
+  TModifyCourse,
 } from '@/types';
 
 // Interface brand
@@ -102,7 +103,8 @@ export interface ILabelProps {
 
 // Interface card course
 export interface ICardCourse {
-  modify: string;
+  id?: number;
+  modify: TModifyCourse;
   title: string;
   description: string;
 }
