@@ -1,4 +1,7 @@
+// React
 import React from 'react';
+
+// Interface
 import { ILogoProps } from '@/types/interfaces';
 
 const Logo = ({

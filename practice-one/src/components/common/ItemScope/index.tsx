@@ -1,7 +1,12 @@
+// React
 import React from 'react';
-import { IScope } from '@/types/interfaces';
+
+// Components
 import Icon from '@/components/common/Icon';
 import Typo from '@/components/common/Typo';
+
+// Interface
+import { IScope } from '@/types/interfaces';
 
 const ItemScope = ({ icon, children, typeScope }: IScope) => (
   <li className="item-scope">

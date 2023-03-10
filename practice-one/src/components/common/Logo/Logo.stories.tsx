@@ -1,6 +1,13 @@
+// React
 import React from 'react';
+
+// Storybook
 import { ComponentMeta, ComponentStory } from '@storybook/react';
+
+// Component
 import Logo from '@/components/common/Logo';
+
+// Interface
 import { ILogoProps } from '@/types/interfaces';
 
 export default {

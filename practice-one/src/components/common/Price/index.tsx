@@ -1,6 +1,11 @@
+// React
 import React from 'react';
-import { IPrice } from '@/types/interfaces';
+
+// Component
 import Typo from '@/components/common/Typo';
+
+// Interface
+import { IPrice } from '@/types/interfaces';
 
 const Price = ({ price, time }: IPrice) => (
   <div>

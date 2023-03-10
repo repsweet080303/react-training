@@ -1,4 +1,7 @@
+// React
 import React from 'react';
+
+// Interface
 import { ILabelProps } from '@/types/interfaces';
 
 const Label = ({ title, size, additionalClass }: ILabelProps) => (
