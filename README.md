@@ -61,12 +61,22 @@
 
 ## How to run practice
 
-- $git clone --branch feature/practice-one https://github.com/repsweet080303/react-training.git
+- $ git clone --branch feature/practice-one https://github.com/repsweet080303/react-training.git
 
-  > pnpm install ( yarn install )
+> cd react-training\practice-one
 
-- checkout branch: practice-one
+### Install package
 
-> git checkout feature/practice-one
+> $ pnpm install ( yarn install )
 
-> cd practice-one
+### Run project
+
+> $ pnpm start ( yarn start )
+
+follow at: http://127.0.0.1:5173/
+
+### Run storybook
+
+> pnpm storybook ( yarn storybook )
+
+follow at: http://localhost:6006/
