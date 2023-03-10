@@ -1,6 +1,13 @@
+// React
 import React from 'react';
+
+// Storybook
 import { ComponentStory, ComponentMeta } from '@storybook/react';
+
+// Component
 import CardPlan from '@/components/common/Card/Plan';
+
+// Interface
 import { listItemScope } from '@/constants';
 import { ICardPlan } from '@/types/interfaces';
 

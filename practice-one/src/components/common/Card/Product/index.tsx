@@ -1,4 +1,7 @@
+// React
 import React from 'react';
+
+// Icons solid fontawesome
 import {
   faCartShopping,
   faEye,
@@ -6,12 +9,18 @@ import {
   faDownload,
   faChevronRight,
 } from '@fortawesome/free-solid-svg-icons';
+
+// icon regular fontawesome
 import { faHeart } from '@fortawesome/free-regular-svg-icons';
-import { ICardProduct } from '@/types/interfaces';
+
+// Components
 import Label from '@/components/common/Label';
 import Icon from '@/components/common/Icon';
 import Typo from '@/components/common/Typo';
 import Button from '@/components/common/Button';
+
+// Interface
+import { ICardProduct } from '@/types/interfaces';
 
 const CardProduct = ({
   imageHeader,
