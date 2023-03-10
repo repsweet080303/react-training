@@ -1,11 +1,18 @@
+// React
 import React from 'react';
+
+// Icon fontawesome
 import { faHeart, faCircleCheck } from '@fortawesome/free-solid-svg-icons';
-import { ICardPlan } from '@/types/interfaces';
+
+// Components
 import Icon from '@/components/common/Icon';
 import Typo from '@/components/common/Typo';
 import Price from '@/components/common/Price';
 import Button from '@/components/common/Button';
 import ItemScope from '@/components/common/ItemScope';
+
+// Interface
+import { ICardPlan } from '@/types/interfaces';
 
 const CardPlan = ({
   options, description, text, listScope,

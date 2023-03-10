@@ -1,4 +1,7 @@
+// React
 import React from 'react';
+
+// Components
 import Typo from '@/components/common/Typo';
 import CardProduct from '@/components/common/Card/Product';
 

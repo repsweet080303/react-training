@@ -1,4 +1,7 @@
+// React
 import React from 'react';
+
+// Interface
 import { IImage } from '@/types/interfaces';
 
 const Image = ({

@@ -1,4 +1,7 @@
+// React
 import React from 'react';
+
+// Components
 import Typo from '@/components/common/Typo';
 import Form from '@/components/common/Form';
 

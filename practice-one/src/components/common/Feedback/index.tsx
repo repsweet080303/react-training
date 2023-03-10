@@ -1,7 +1,14 @@
+// React
 import React from 'react';
+
+// Icon in fontawesome
 import { faStar as solidStar } from '@fortawesome/free-solid-svg-icons';
 import { faStar as regularStar } from '@fortawesome/free-regular-svg-icons';
+
+// Interface
 import { IFeedback } from '@/types/interfaces';
+
+// Component
 import Icon from '@/components/common/Icon';
 import Typo from '@/components/common/Typo';
 import User from '@/components/common/User';

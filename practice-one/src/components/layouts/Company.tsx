@@ -1,4 +1,7 @@
+// React
 import React from 'react';
+
+// Component
 import Logo from '@/components/common/Logo';
 
 const Company = () => (

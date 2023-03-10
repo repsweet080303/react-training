@@ -1,5 +1,10 @@
+// React
 import React from 'react';
+
+// Component
 import Image from '@/components/common/Image';
+
+// Interface
 import { IListItemProps } from '@/types/interfaces';
 
 const ListItem = ({

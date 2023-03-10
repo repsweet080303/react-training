@@ -1,5 +1,10 @@
+// React
 import React from 'react';
+
+// Style
 import '@/styles/main.scss';
+
+// Component layout
 import HomePage from '@/pages/HomePage';
 
 function App() {

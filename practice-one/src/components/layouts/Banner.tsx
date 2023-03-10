@@ -1,5 +1,10 @@
+// React
 import React from 'react';
+
+// Icon solid fontawesome
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+
+// Components
 import Typo from '@/components/common/Typo';
 import Button from '@/components/common/Button';
 import Icon from '@/components/common/Icon';

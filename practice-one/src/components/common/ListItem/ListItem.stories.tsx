@@ -1,6 +1,13 @@
+// React
 import React from 'react';
+
+// Storybook
 import { ComponentStory, ComponentMeta } from '@storybook/react';
+
+// Component
 import ListItem from '@/components/common/ListItem';
+
+// Interface
 import { IListItemProps } from '@/types/interfaces';
 
 export default {

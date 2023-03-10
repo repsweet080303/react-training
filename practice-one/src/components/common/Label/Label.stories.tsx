@@ -1,6 +1,13 @@
+// React
 import React from 'react';
+
+// Storybook
 import { ComponentStory, ComponentMeta } from '@storybook/react';
+
+// Component
 import Label from '@/components/common/Label';
+
+// Interface
 import { ILabelProps } from '@/types/interfaces';
 
 export default {

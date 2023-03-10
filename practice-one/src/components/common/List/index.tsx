@@ -1,6 +1,11 @@
+// React
 import React from 'react';
+
+// Components
 import ListItem from '@/components/common/ListItem';
 import Typo from '@/components/common/Typo';
+
+// Interface
 import { IListProps } from '@/types/interfaces';
 
 const List = ({ title, additionalClass, listItem }: IListProps) => (

@@ -1,7 +1,12 @@
+// React
 import React from 'react';
-import { ICardCourse } from '@/types/interfaces';
+
+// Components
 import Typo from '@/components/common/Typo';
 import Straight from '@/components/common/Straight';
+
+// Interface
+import { ICardCourse } from '@/types/interfaces';
 
 const CardCourse = ({ modify, title, description }: ICardCourse) => (
   <div className="card card-course">

@@ -1,6 +1,13 @@
+// React
 import React from 'react';
+
+// Storybook
 import { ComponentStory, ComponentMeta } from '@storybook/react';
+
+// Component
 import Feedback from '@/components/common/Feedback';
+
+// Interface
 import { IFeedback } from '@/types/interfaces';
 
 export default {

@@ -1,6 +1,13 @@
+// React
 import React from 'react';
+
+// Storybook
 import { ComponentMeta, ComponentStory } from '@storybook/react';
+
+// Component
 import User from '@/components/common/User';
+
+// Interface
 import { IUser } from '@/types/interfaces';
 
 export default {

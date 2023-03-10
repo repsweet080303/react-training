@@ -1,6 +1,13 @@
+// React
 import React from 'react';
+
+// Storybook
 import { ComponentStory, ComponentMeta } from '@storybook/react';
+
+// Component
 import Image from '@/components/common/Image';
+
+// Interface
 import { IImage } from '@/types/interfaces';
 
 export default {

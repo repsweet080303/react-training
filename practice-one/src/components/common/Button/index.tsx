@@ -1,4 +1,7 @@
+// React
 import React from 'react';
+
+// Interface
 import { IButtonProps } from '@/types/interfaces';
 
 const Button = ({

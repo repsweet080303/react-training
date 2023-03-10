@@ -1,4 +1,7 @@
+// React
 import React from 'react';
+
+// Component layout
 import Header from '@/components/layouts/Header';
 import Hero from '@/components/layouts/Hero';
 import Banner from '@/components/layouts/Banner';

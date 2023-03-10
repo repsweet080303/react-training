@@ -1,6 +1,13 @@
+// React
 import React from 'react';
+
+// Storybook
 import { ComponentStory, ComponentMeta } from '@storybook/react';
+
+// Component
 import CardProduct from '@/components/common/Card/Product';
+
+// Interface
 import { ICardProduct } from '@/types/interfaces';
 
 export default {

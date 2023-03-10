@@ -1,6 +1,13 @@
+// React
 import React from 'react';
+
+// Storybook
 import { ComponentStory, ComponentMeta } from '@storybook/react';
+
+// Component
 import Price from '@/components/common/Price';
+
+// Interface
 import { IPrice } from '@/types/interfaces';
 
 export default {

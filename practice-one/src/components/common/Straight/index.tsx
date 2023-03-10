@@ -1,4 +1,7 @@
+// React
 import React from 'react';
+
+// Interface
 import { IStraightProps } from '@/types/interfaces';
 
 const Straight = ({ additionalClass }: IStraightProps) => (

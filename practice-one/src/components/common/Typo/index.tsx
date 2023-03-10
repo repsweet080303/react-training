@@ -1,4 +1,7 @@
+// React
 import React from 'react';
+
+// Interface
 import { ITypoProps } from '@/types/interfaces';
 
 const Typo = ({

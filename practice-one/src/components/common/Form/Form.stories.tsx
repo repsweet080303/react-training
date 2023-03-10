@@ -1,6 +1,13 @@
+// React
 import React from 'react';
+
+// Storybook
 import { ComponentStory, ComponentMeta } from '@storybook/react';
+
+// Component
 import Form from '@/components/common/Form';
+
+// Interface
 import { IInput } from '@/types/interfaces';
 
 export default {
