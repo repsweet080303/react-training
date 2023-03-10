@@ -50,8 +50,8 @@ const WatchPlan = () => (
           text="Slate helps you see how many more days you need..."
           listScope={listItemScope}
         />
-        <Label title="New" size="md" additionalClass="label__circle" />
         <CardPlan
+          isLabel
           options="FREE"
           description="Organize across all apps by hand"
           text="Slate helps you see how many more days you need..."
