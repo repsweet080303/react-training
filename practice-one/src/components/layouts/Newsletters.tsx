@@ -29,18 +29,28 @@ const Newsletter = () => (
         >
           Most Popular Courses
         </Typo>
-        <Typo
-          additionalTypo="newsletter__text"
-          statusTypo="typo__paragraph"
-          sizeTypo="xs"
-          tagTypo="p"
-          weightTypo="typo__regular"
-          classTypo="typo__desc"
-        >
-          Problems trying to resolve the conflict between
-          <br />
-          the two major realms of Classical physics: Newtonian mechanics
-        </Typo>
+        <div className="newsletter__desc">
+          <Typo
+            additionalTypo="newsletter__text"
+            statusTypo="typo__paragraph"
+            sizeTypo="xs"
+            tagTypo="p"
+            weightTypo="typo__regular"
+            classTypo="typo__desc"
+          >
+            Problems trying to resolve the conflict between
+          </Typo>
+          <Typo
+            additionalTypo="newsletter__text"
+            statusTypo="typo__paragraph"
+            sizeTypo="xs"
+            tagTypo="p"
+            weightTypo="typo__regular"
+            classTypo="typo__desc"
+          >
+            the two major realms of Classical physics: Newtonian mechanics
+          </Typo>
+        </div>
       </div>
       <div className="newsletter__form">
         <Form placeholder="Your Email" type="email">
