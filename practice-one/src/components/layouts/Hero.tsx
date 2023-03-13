@@ -6,6 +6,9 @@ import Typo from '@/components/common/Typo';
 import Button from '@/components/common/Button';
 import CardCourse from '@/components/common/Card/Course';
 
+// Constant
+import { listCardCourse } from '@/constants';
+
 const Hero = () => (
   <section className="hero">
     <div className="container--small">
@@ -48,27 +51,14 @@ const Hero = () => (
         </div>
       </div>
       <div className="card-course__group">
-        <CardCourse
-          modify="expert"
-          title="Expert Instruction"
-          description="The gradual accumulation of
-        information about atomic and
-        small-scale behaviour..."
-        />
-        <CardCourse
-          modify="training"
-          title="Training Courses"
-          description="The gradual accumulation of
-        information about atomic and
-        small-scale behaviour..."
-        />
-        <CardCourse
-          modify="life"
-          title="Lifetime access"
-          description="The gradual accumulation of
-        information about atomic and
-        small-scale behaviour..."
-        />
+        {listCardCourse.map((course) => (
+          <CardCourse
+            key={course.id}
+            modify={course.modify}
+            title={course.title}
+            description={course.description}
+          />
+        ))}
       </div>
     </div>
   </section>

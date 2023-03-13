@@ -1,4 +1,12 @@
-import { IListItemProps, IListScope, IListProps } from '@/types/interfaces';
+import {
+  IListItemProps,
+  IListScope,
+  IListProps,
+  ICardCourse,
+  ICardProduct,
+  ICardPlan,
+  IFeedback,
+} from '@/types/interfaces';
 
 const listNavigation: IListItemProps[] = [
   {
@@ -232,4 +240,133 @@ const listFooter: IListProps[] = [
     ],
   },
 ];
-export { listNavigation, listItemScope, listFooter };
+
+const listCardCourse: ICardCourse[] = [
+  {
+    id: 1,
+    modify: 'expert',
+    title: 'Expert Instruction',
+    description:
+      'The gradual accumulation of information about atomic and small-scale behaviour...',
+  },
+  {
+    id: 2,
+    modify: 'training',
+    title: 'Training Courses',
+    description:
+      'The gradual accumulation of information about atomic and small-scale behaviour...',
+  },
+  {
+    id: 3,
+    modify: 'life',
+    title: 'Lifetime access',
+    description:
+      'The gradual accumulation of information about atomic and small-scale behaviour...',
+  },
+];
+
+const listCardProduct: ICardProduct[] = [
+  {
+    id: 1,
+    imageHeader: 'src/assets/images/keyboard-cover.png',
+    alt: 'keyboard cover',
+    tag: 'Training Courses',
+    title: 'Video in Live Action',
+    description:
+      "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
+    vote: 4.5,
+    downloaded: 15,
+    newPrice: 6.48,
+    oldPrice: 16.48,
+  },
+  {
+    id: 2,
+    imageHeader: 'src/assets/images/pencil-cover.png',
+    alt: 'pencil cover',
+    tag: 'Books Liberary',
+    title: 'Every Client Matters',
+    description:
+      "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
+    vote: 4.5,
+    downloaded: 15,
+    newPrice: 6.48,
+    oldPrice: 16.48,
+  },
+  {
+    id: 3,
+    imageHeader: 'src/assets/images/color-pencil-cover.png',
+    alt: 'pencil color cover',
+    tag: 'Certified Teacher',
+    title: 'Get Quality Education',
+    description:
+      "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
+    vote: 4.5,
+    downloaded: 15,
+    newPrice: 6.48,
+    oldPrice: 16.48,
+  },
+];
+
+const listCardPlan: ICardPlan[] = [
+  {
+    id: 1,
+    isLabel: false,
+    options: 'FREE',
+    description: 'Organize across all apps by hand',
+    text: 'Slate helps you see how many more days you need...',
+  },
+  {
+    id: 2,
+    isLabel: true,
+    options: 'FREE',
+    description: 'Organize across all apps by hand',
+    text: 'Slate helps you see how many more days you need...',
+  },
+  {
+    id: 2,
+    isLabel: false,
+    options: 'FREE',
+    description: 'Organize across all apps by hand',
+    text: 'Slate helps you see how many more days you need...',
+  },
+];
+
+const listFeedback: IFeedback[] = [
+  {
+    id: 1,
+    comment:
+      'Slate helps you see how many more days you need to work to reach your financial goal for the month and year.',
+    name: 'Regina Miles',
+    job: 'Designer',
+    alt: 'user one',
+    url: 'src/assets/images/avatar-one.jpg',
+  },
+  {
+    id: 2,
+    comment:
+      'Slate helps you see how many more days you need to work to reach your financial goal for the month and year.',
+    name: 'Regina Miles',
+    job: 'Designer',
+    alt: 'user two',
+    url: 'src/assets/images/avatar-two.jpg',
+  },
+  {
+    id: 3,
+    comment:
+      'Slate helps you see how many more days you need to work to reach your financial goal for the month and year.',
+    name: 'Regina Miles',
+    job: 'Designer',
+    alt: 'user three',
+    url: 'src/assets/images/avatar-three.png',
+  },
+];
+
+export {
+  listNavigation,
+  listItemScope,
+  listFooter,
+  listCardCourse,
+  listCardProduct,
+  listCardPlan,
+  listFeedback,
+};

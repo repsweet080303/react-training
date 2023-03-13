@@ -25,6 +25,7 @@ import {
   TOptionsPlan,
   TForm,
   TImageSize,
+  TModifyCourse,
 } from '@/types';
 
 // Interface brand
@@ -102,13 +103,15 @@ export interface ILabelProps {
 
 // Interface card course
 export interface ICardCourse {
-  modify: string;
+  id?: number;
+  modify: TModifyCourse;
   title: string;
   description: string;
 }
 
 // Interface card product
 export interface ICardProduct {
+  id?: number;
   imageHeader: string;
   alt: string;
   tag: string;
@@ -122,11 +125,12 @@ export interface ICardProduct {
 
 // Interface card plan
 export interface ICardPlan {
+  id?: number;
   isLabel?: boolean;
   options: TOptionsPlan;
   description: string;
   text: string;
-  listScope: IListScope[];
+  listScope?: IListScope[];
 }
 
 // Interface price
@@ -159,9 +163,11 @@ export interface IUser {
 
 // Interface feedback
 export interface IFeedback {
+  id?: number;
   name: string;
   job: string;
-  children: ReactNode;
+  comment?: string;
+  children?: ReactNode,
   url: string;
   alt?: string;
 }

@@ -5,6 +5,9 @@ import React from 'react';
 import Feedback from '@/components/common/Feedback';
 import Typo from '@/components/common/Typo';
 
+// Constant
+import { listFeedback } from '@/constants';
+
 const Testimonial = () => (
   <section className="testimonial">
     <div className="container--large">
@@ -36,38 +39,21 @@ const Testimonial = () => (
         >
           Problems trying to resolve the conflict between
           <br />
-          the two major realms
-          of Classical physics: Newtonian mechanics
+          the two major realms of Classical physics: Newtonian mechanics
         </Typo>
       </div>
       <div className="testimonial__feedback">
-        <Feedback
-          name="Regina Miles"
-          job="Designer"
-          alt="user one"
-          url="src/assets/images/avatar-one.jpg"
-        >
-          Slate helps you see how many more days you need to work to reach your
-          financial goal for the month and year.
-        </Feedback>
-        <Feedback
-          name="Regina Miles"
-          job="Designer"
-          alt="user two"
-          url="src/assets/images/avatar-two.jpg"
-        >
-          Slate helps you see how many more days you need to work to reach your
-          financial goal for the month and year.
-        </Feedback>
-        <Feedback
-          name="Regina Miles"
-          job="Designer"
-          alt="user three"
-          url="src/assets/images/avatar-three.png"
-        >
-          Slate helps you see how many more days you need to work to reach your
-          financial goal for the month and year.
-        </Feedback>
+        {listFeedback.map((feedback) => (
+          <Feedback
+            key={feedback.id}
+            name={feedback.name}
+            job={feedback.job}
+            url={feedback.url}
+            alt={feedback.alt}
+          >
+            {feedback.comment}
+          </Feedback>
+        ))}
       </div>
     </div>
   </section>

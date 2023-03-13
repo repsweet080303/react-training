@@ -4,10 +4,9 @@ import React from 'react';
 // Components
 import Typo from '@/components/common/Typo';
 import CardPlan from '@/components/common/Card/Plan';
-import Label from '@/components/common/Label';
 
 // Constant
-import { listItemScope } from '@/constants';
+import { listItemScope, listCardPlan } from '@/constants';
 
 const WatchPlan = () => (
   <section className="watch-plan">
@@ -44,25 +43,16 @@ const WatchPlan = () => (
         </Typo>
       </div>
       <div className="watch-plan__card">
-        <CardPlan
-          options="FREE"
-          description="Organize across all apps by hand"
-          text="Slate helps you see how many more days you need..."
-          listScope={listItemScope}
-        />
-        <CardPlan
-          isLabel
-          options="FREE"
-          description="Organize across all apps by hand"
-          text="Slate helps you see how many more days you need..."
-          listScope={listItemScope}
-        />
-        <CardPlan
-          options="FREE"
-          description="Organize across all apps by hand"
-          text="Slate helps you see how many more days you need..."
-          listScope={listItemScope}
-        />
+        {listCardPlan.map((plan) => (
+          <CardPlan
+            key={plan.id}
+            isLabel={plan.isLabel}
+            options={plan.options}
+            description={plan.description}
+            text={plan.text}
+            listScope={listItemScope}
+          />
+        ))}
       </div>
     </div>
   </section>

@@ -51,6 +51,9 @@ export type TLabelSize = 'sm' | 'md';
 // Type icon
 export type TItemIcon = 'advantage' | 'disadvantage';
 
+// Type card course modify
+export type TModifyCourse = 'expert' | 'training' | 'life';
+
 // Type card plan
 export type TOptionsPlan = 'PAYMENT' | 'FREE';
 
