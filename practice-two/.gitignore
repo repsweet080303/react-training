@@ -10,3 +10,6 @@ json-server/
 
 # folder dist
 dist
+
+# data local
+data/
