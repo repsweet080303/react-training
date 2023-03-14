@@ -1,9 +1,11 @@
 // Library
-import React, { Children } from 'react';
+import React from 'react';
 import clsx from 'clsx';
 
 // Interface
 import { IButton } from '@/types/interface';
+
+import './button.css';
 
 const Button = ({
   variant,
