@@ -63,3 +63,27 @@
   - Update user
   - Delete user
   - Search user
+
+### How to run practice:
+
+> cd practice-two
+
+#### Install package
+
+> $ pnpm install ( yarn install )
+
+#### Run server
+
+> $ pnpm start-server ( yarn start-server )
+
+#### Run project
+
+> $ pnpm start ( yarn start )
+
+follow at: [http://127.0.0.1:5173/](http://127.0.0.1:5173/)
+
+#### Run storybook
+
+> $ pnpm storybook ( yarn storybook )
+
+follow at: [http://localhost:6006/](http://localhost:6006/)
