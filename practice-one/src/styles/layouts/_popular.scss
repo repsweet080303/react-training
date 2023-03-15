@@ -1,0 +1,23 @@
+.popular-course {
+  background-color: $color-secondary;
+  padding-bottom: 80px;
+
+  &__content {
+    height: 134px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    @include desktop {
+      text-align: start;
+      align-items: start;
+    }
+  }
+
+  &__card {
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

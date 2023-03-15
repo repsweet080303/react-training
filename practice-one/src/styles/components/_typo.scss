@@ -1,0 +1,171 @@
+.typo {
+  &__tag {
+    width: 147px;
+  }
+
+  &__head {
+    width: 542px;
+    text-align: center;
+
+    @include desktop {
+      text-align: start;
+    }
+  }
+
+  &__sub {
+    @extend .typo__head;
+    width: 278px;
+    margin: 0 auto;
+
+    @include desktop {
+      margin: 0;
+    }
+
+    &--light {
+      @extend .typo__sub;
+      width: 463px;
+    }
+
+    &--large {
+      @extend .typo__sub;
+      width: 335px;
+    }
+  }
+
+  &__feature {
+    width: 221px;
+    @extend .typo__sub;
+
+    &--start {
+      text-align: start;
+
+      @include desktop {
+        margin: 0;
+      }
+    }
+  }
+
+  &__desc {
+    @extend .typo__sub--light;
+    color: $paragraph-color;
+  }
+
+  &__text {
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+
+    @include desktop {
+      margin: 0;
+      text-align: start;
+    }
+  }
+
+  &__title {
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+
+    @include desktop {
+      margin: 0;
+      text-align: start;
+    }
+  }
+
+  &__primary {
+    color: $color-primary;
+  }
+
+  &__secondary {
+    color: $color-secondary;
+
+    &--light {
+      color: $color-light;
+    }
+  }
+
+  &__paragraph {
+    color: $paragraph-color;
+  }
+
+  &__semibold {
+    font-family: $font-family-primary;
+  }
+
+  &__bold {
+    font-family: $font-family-tertiary;
+  }
+
+  &__medium {
+    font-family: $font-family-secondary;
+  }
+
+  &__regular {
+    font-family: $font-family-quaterdary;
+  }
+
+  &__xs {
+    font-size: $font-size-xs;
+
+    @include desktop {
+      font-size: $font-size-xsm;
+    }
+  }
+
+  &__sm {
+    font-size: $font-size-xsm;
+  }
+
+  &__md {
+    font-size: $font-size-lg;
+
+    @include tablet {
+      font-size: $font-size-md;
+    }
+  }
+
+  &__lg {
+    font-size: $font-size-md;
+
+    @include tablet {
+      font-size: $font-size-lg;
+    }
+  }
+
+  &__xlg {
+    font-size: $font-size-lg;
+
+    @include tablet {
+      font-size: $font-size-xlg;
+    }
+  }
+
+  &__xl {
+    font-size: $font-size-xlg;
+
+    @include tablet {
+      font-size: $font-size-xl;
+    }
+  }
+
+  &__xxxl {
+    font-size: $font-size-xxl;
+
+    @include tablet {
+      font-size: $font-size-xxxl;
+    }
+  }
+
+  &__comment {
+    padding: 15px 60px 30px 60px;
+    text-align: center;
+  }
+
+  &__line-height {
+    line-height: 2 ;
+  }
+
+  &__price {
+    padding-bottom: 6px;
+  }
+}

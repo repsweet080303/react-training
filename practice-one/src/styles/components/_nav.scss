@@ -1,0 +1,30 @@
+.navigation {
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__desktop {
+    display: none;
+
+    @include tablet {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__mobile {
+    @include tablet {
+      display: none;
+    }
+  }
+
+  @include tablet {
+    padding: 13px 0;
+    justify-content: space-around;
+  }
+
+  @include desktop {
+    padding: 20px 0;
+  }
+}

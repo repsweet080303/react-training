@@ -1,0 +1,31 @@
+.watch-plan {
+  &__content {
+    height: 116px;
+    padding-bottom: 80px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    @include desktop {
+      text-align: start;
+      align-items: start;
+    }
+  }
+
+  &__card {
+    width: 500px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include tablet {
+      width: 750px;
+    }
+
+    @include desktop {
+      width: 100%;
+    }
+  }
+}

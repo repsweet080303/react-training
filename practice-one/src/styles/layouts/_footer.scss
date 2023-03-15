@@ -1,0 +1,46 @@
+.footer {
+  &__list {
+    align-items: center;
+
+    @include tablet {
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    margin: 0;
+    font-size: $font-size-xs;
+
+    @include desktop {
+      font-size: $font-size-xsm;
+    }
+  }
+
+  &__credit {
+    background-color: $footer-color;
+  }
+
+  &__group {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__social {
+    width: 112px;
+    display: flex;
+    margin: 20px auto;
+    justify-content: space-between;
+
+    @include tablet {
+      margin: 25px 62px;
+    }
+  }
+
+  @include tablet {
+    padding: 0 20px;
+  }
+
+  @include desktop {
+    padding: 0;
+  }
+}

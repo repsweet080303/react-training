@@ -1,0 +1,27 @@
+.form {
+  &__email {
+    width: 60%;
+    border: $form-border;
+    color: $paragraph-color;
+    background-color: $form-color;
+
+    font: {
+      size: $font-size-xs;
+      family: $font-family-secondary;
+    }
+
+    @include tablet {
+      height: 50px;
+    }
+
+    @include desktop {
+      padding: 4px 20px;
+      font-size: $font-size-xsm;
+    }
+  }
+
+  &__group {
+    display: flex;
+    justify-content: center;
+  }
+}

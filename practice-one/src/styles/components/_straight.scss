@@ -1,0 +1,19 @@
+.straight {
+  margin: 20px auto;
+  background-color: $color-danger;
+
+  &__medium {
+    width: 50px;
+    height: 4px;
+    border-radius: 10px;
+  }
+
+  &__long {
+    width: 94px;
+    height: 6px;
+  }
+
+  @include desktop {
+    margin: 20px 0;
+  }
+}

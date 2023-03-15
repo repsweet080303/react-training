@@ -1,0 +1,48 @@
+.cover {
+  @include desktop {
+    background-image: url(../assets/images/block-background.png);
+    background-repeat: no-repeat;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+.container {
+  margin: 0 auto;
+
+  @include tablet {
+    max-width: 992px;
+  }
+
+  @include desktop {
+    max-width: 1050px;
+  }
+
+  &--small {
+    @extend .container;
+
+    @include desktop {
+      padding: 0;
+    }
+  }
+
+  &--large {
+    @extend .container;
+    margin: 0 auto;
+    padding: 160px 0;
+  }
+}
+
+.d-flex-column-mobile {
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    flex-direction: row;
+  }
+}
+
+.d-flex-content {
+  display: flex;
+  flex-direction: column;
+}

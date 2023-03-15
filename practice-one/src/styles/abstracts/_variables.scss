@@ -1,0 +1,70 @@
+// font-size variable
+$font-size-xxxl: 58px;
+$font-size-xxl: 45px;
+$font-size-xl: 40px;
+$font-size-xlg: 32px;
+$font-size-lg: 24px;
+$font-size-md: 20px;
+$font-size-sm: 16px;
+$font-size-xsm: 14px;
+$font-size-xss: 13px;
+$font-size-xs: 12px;
+$font-size-xxs: 11px;
+
+// size icon variables
+$icon-heart-font-size: 34px;
+$icon-check-font-size: 32px;
+
+// line-height variables
+$line-height-lg: 1.4;
+$line-height-md: 1.2;
+$line-height-sm: 1.1;
+
+// color variables
+$color-primary: #ff6551;
+$color-secondary: #252b42;
+$color-success: #2dc071;
+$color-mute: #bdbdbd;
+$color-danger: #e74040;
+$color-golden: #ffc526;
+$color-disable: #8ec2f2;
+$color-active: #2435a1;
+$color-light: #fff;
+
+// text variables
+$text-secondary-color: $color-active;
+$text-light-color: $color-light;
+$paragraph-color: #737373;
+
+// background variables
+$primary-bg: $color-light;
+$secondary-bg: #26335d;
+
+// button variables
+$btn-primary-bg: $color-primary;
+$btn-secondary-bg: $color-light;
+$btn-hover-opacity: 0.8;
+$btn-border: 1px solid $color-primary;
+$btn-border-radius: 33px;
+$btn-border-radius-sm: 5px;
+$btn-border-radius-lg: 37px;
+$btn-border-left-radius: 0 10px 10px 0;
+
+// card variables
+$card-bg: $color-light;
+$card-dark-bg: $color-secondary;
+$card-action-color: $color-secondary;
+$card-box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.07);
+$card-border-radius: 20px;
+$card-icon-opacity: 0.7;
+
+// form variables
+$form-color: #f9f9f9;
+$form-border-color: #e6e6e6;
+$form-border: 1px solid $form-border-color;
+
+// label variable
+$label-color: #e77c40;
+
+// footer variable
+$footer-color: #fafafa;

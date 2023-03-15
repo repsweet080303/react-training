@@ -1,0 +1,25 @@
+.label {
+  background-color: red;
+  color: #fff;
+  text-align: center;
+  border-radius: 3px;
+
+  &--sm {
+    padding: 4px 10px;
+  }
+
+  &--md {
+    padding: 6px 14px;
+  }
+
+  &__circle {
+    position: absolute;
+    border-radius: 52px;
+    padding: 33px 17px;
+    background-color: $label-color;
+    font-size: $font-size-lg;
+    z-index: 1;
+    right: -34px;
+    top: -35px;
+  }
+}

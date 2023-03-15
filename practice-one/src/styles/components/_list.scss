@@ -1,0 +1,52 @@
+.list {
+  &--column {
+    margin-right: 30px;
+    position: absolute;
+    right: 0;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &--row {
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-right: 50px;
+    }
+
+    @include desktop {
+      margin: 0 0 0 80px;
+    }
+  }
+
+  &__scope {
+    height: 236px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    padding-bottom: 12px;
+  }
+
+  &__footer:last-child {
+    width: 120px;
+
+    @include tablet {
+      width: 300px;
+    }
+  }
+
+  &__footer {
+    margin: 20px 0;
+    width: 120px;
+
+    @include tablet {
+      width: 145px;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.list-item {
+  padding: 12px 0;
+  display: flex;
+  align-items: center;
+
+  &__link {
+    color: $paragraph-color;
+    font: {
+      family: $font-family-tertiary;
+      size: $font-size-xsm;
+    }
+
+    &:hover {
+      color: $color-primary;
+    }
+
+    @include tablet {
+      margin-left: 25px;
+    }
+
+    @include desktop {
+      margin-left: 21px;
+    }
+  }
+}

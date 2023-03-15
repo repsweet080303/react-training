@@ -1,0 +1,66 @@
+.icon {
+  &__bars {
+    margin: 15px;
+    font-size: 30px;
+    color: $color-secondary;
+  }
+
+  &__arrow {
+    padding-left: 3px;
+    @include tablet {
+      padding-left: 6px;
+    }
+
+    @include desktop {
+      padding-left: 15px;
+    }
+  }
+
+  &__chevron-right {
+    padding-left: 4px;
+  }
+
+  &__block {
+    padding: 10px 10px;
+    border-radius: 50%;
+    font-size: $font-size-md;
+    color: $card-action-color;
+    background-color: $card-bg;
+
+    &:hover {
+      opacity: $card-icon-opacity;
+    }
+  }
+
+  &__start {
+    padding-right: 2px;
+    color: $color-golden;
+
+    &--regular {
+      @extend .icon__start;
+    }
+  }
+
+  &__advantage {
+    font-size: $font-size-xlg;
+    color: $color-success;
+    padding-right: 8px;
+  }
+
+  &__disadvantage {
+    @extend .icon__advantage;
+    color: $color-mute;
+  }
+
+  &__wrapper {
+    padding: 24px;
+    border-radius: 50%;
+    color: $text-light-color;
+    font-size: $icon-heart-font-size;
+    background-color: $color-primary;
+  }
+
+  &__rate {
+    font-size: $font-size-md;
+  }
+}
