@@ -1,0 +1,28 @@
+.btn {
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-light)
+}
+
+.btn-primary {
+  background-color: var(--color-blue);
+}
+
+.btn-secondary {
+  background-color: var(--color-alice);
+  color: var(--color-blue);
+}
+
+.btn-small {
+  padding: 7px 39px;
+}
+
+.btn-medium {
+  padding: 7px 61px;
+}
+
+.btn-large {
+  padding: 7px 67px;
+}
