@@ -68,7 +68,7 @@
 
 - $ git clone --branch feature/practice-two https://github.com/repsweet080303/react-training.git
 
-> cd react-training/practice-two
+> cd practice-two
 
 #### Install package
 
@@ -76,7 +76,7 @@
 
 #### Run server
 
-> $ pnpm run server ( yarn server )
+> $ pnpm start-server ( yarn start-server )
 
 #### Run project
 
