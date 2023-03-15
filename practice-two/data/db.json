@@ -1,0 +1,104 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "avatar": "https://docs.webix.com/usermanager-backend/users/97/avatar/503723673.jpg",
+      "name": "Berni Mayou",
+      "isActive": true,
+      "email": "bern.mayour@gmail.com",
+      "description": "I'm human director",
+      "registered": "Jun 01, 2020 00:40:48",
+      "lastUpdated": "Thu Feb 02 2023 15:43:44 GMT+0700 (Indochina Time)"
+    },
+    {
+      "id": 2,
+      "avatar": "https://docs.webix.com/usermanager-backend/users/97/avatar/375515968.jpg",
+      "name": "August Dvorak",
+      "isActive": true,
+      "email": "dvor.august@gmail.com",
+      "description": "I'm human resource",
+      "registered": "Jun 01, 2020 00:40:48",
+      "lastUpdated": "Thu Feb 02 2023 15:43:44 GMT+0700 (Indochina Time)"
+    },
+    {
+      "id": 3,
+      "avatar": "https://docs.webix.com/usermanager-backend/users/98/avatar/909471384.jpg",
+      "name": "Elly Souyer",
+      "isActive": true,
+      "email": "elly.soyer@example",
+      "description": "I'm human signature",
+      "registered": "Jun 01, 2020 00:40:48",
+      "lastUpdated": "Thu Feb 02 2023 15:43:44 GMT+0700 (Indochina Time)"
+    },
+    {
+      "id": 4,
+      "avatar": "https://docs.webix.com/usermanager-backend/users/101/avatar/092352563.jpg",
+      "name": "Patrick Roland",
+      "isActive": false,
+      "email": "roll.and@gmail.com",
+      "description": "I'm desginer",
+      "registered": "Jun 01, 2020 00:40:48",
+      "lastUpdated": "Thu Feb 02 2023 16:13:06 GMT+0700 (Indochina Time)"
+    },
+    {
+      "id": 5,
+      "avatar": "https://docs.webix.com/usermanager-backend/users/102/avatar/898151818.jpg",
+      "name": "Petyr Baelish",
+      "isActive": true,
+      "email": "big.finger@gmail.com",
+      "description": "I'm hunter",
+      "registered": "Jun 01, 2020 00:40:48",
+      "lastUpdated": "Thu Feb 02 2023 15:44:30 GMT+0700 (Indochina Time)"
+    },
+    {
+      "id": 6,
+      "avatar": "https://docs.webix.com/usermanager-backend/users/104/avatar/005471511.jpg",
+      "name": "Lord Varys",
+      "isActive": true,
+      "email": "little.birds@gmail.com",
+      "description": "I'm chucher",
+      "registered": "Jun 01, 2020 00:40:48",
+      "lastUpdated": "Thu Feb 02 2023 14:50:31 GMT+0700 (Indochina Time)"
+    },
+    {
+      "id": 7,
+      "avatar": "https://docs.webix.com/usermanager-backend/users/105/avatar/096793420.jpg",
+      "name": "Daenerys Stormborn Targaryen",
+      "isActive": false,
+      "email": "breaker.of.chains@gm.com",
+      "description": "I'm braver",
+      "registered": "Jun 01, 2020 00:40:48",
+      "lastUpdated": "Thu Feb 02 2023 15:43:25 GMT+0700 (Indochina Time)"
+    },
+    {
+      "id": 8,
+      "avatar": "https://docs.webix.com/usermanager-backend/users/107/avatar/268122171.jpg",
+      "name": "Jon Snow",
+      "isActive": false,
+      "email": "lord.crow@wall.com",
+      "description": "I'm homeless",
+      "registered": "Jun 01, 2020 00:40:48",
+      "lastUpdated": "Jun 01, 2020 00:40:48"
+    },
+    {
+      "id": 9,
+      "avatar": "https://docs.webix.com/usermanager-backend/users/106/avatar/865831461.jpg",
+      "name": "Francis Bacon",
+      "isActive": false,
+      "email": "Francis.crow@wall.com",
+      "description": "I'm poem",
+      "registered": "Jun 01, 2020 00:40:48",
+      "lastUpdated": "Jun 01, 2020 00:40:48"
+    },
+    {
+      "id": 10,
+      "avatar": "https://docs.webix.com/usermanager-backend/users/108/avatar/932427870.jpg",
+      "name": "Tyrion Lannister",
+      "isActive": false,
+      "email": "tyrio.lannister@wall.com",
+      "description": "I'm homeless",
+      "registered": "Jun 01, 2020 00:40:48",
+      "lastUpdated": "Jun 01, 2020 00:40:48"
+    }
+  ]
+}
